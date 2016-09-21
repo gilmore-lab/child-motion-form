@@ -1,12 +1,10 @@
 # README
-Rick Gilmore  
-`r Sys.time()`  
 
 ## Motion Form (MOFO) Child Tuning
 
 This is the repo for the Motion Form (MOFO) tuning study with child participants.
 
-Last updated 2016-09-21 11:59:14.
+Last updated 2016-09-21 12:04:19.
 
 ## Contents
 

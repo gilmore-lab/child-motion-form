@@ -1,11 +1,8 @@
 ---
 title: "README"
-author: "Rick Gilmore"
-date: "`r Sys.time()`"
 output: 
   html_document:
     keep_md: true
-bibliography: bibliography.bib
 ---
 
 ## Motion Form (MOFO) Child Tuning
