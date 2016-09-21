@@ -16,8 +16,9 @@ Last updated `r Sys.time()`.
 
 ## Contents
 
-- *.bib, bibliography file
 - *.Rmd, RMarkdown files for scripting various reports.
+    - [mofo_render_all.R](mofo_render_all.R) creates plots for all four harmonics of interest (1F1, 2F1, 3F1, and 1F2) for the direction-defined forms condition. `source("mofo_render_all.R")` then `mofo_render_all()` to generate.
+    - [child-motion-form-direction.Rmd](child-motion-form-direction.Rmd) is called by `mofo_render_all()`.
 - [notes/](notes/)
     - [Project notes](notes/project-notes-mofo-child-tuning.md)
     - [Stimulus parameters](notes/mofo-child-tuning-parameters.md)
@@ -26,8 +27,12 @@ Last updated `r Sys.time()`.
     - [mofo-RLS-file-convert.R](analysis/mofo-RLS-file-convert.R), function to import, merge, and convert PowerDiva RLS, Session, and related files into CSVs.
     - [data/](analysis/data/)
         - [egi.csv](analysis/data/egi.csv), comma-delimited file with coordinates of EGI 128 channels.
+        - child-mofo-*-direction-stats.csv summarize the channel-by-channel statistics for the GLM fit to the data.
         - [csv-bysession/](analysis/data/csv-bysession/) comma-delimited files of individual sessions.
-        - [Thresh100-identifiable/](analysis/data/Thresh100/), individual testing sessions with identifiable data elements so not pushed to GitHub.
+        - [csv-aggregate/]() directory for aggregated (merged across participants) data file. Not stored on GitHub due to large size (>100MB), but can be regenerated from session-level files.
+- [pubs/](pubs/) publications directory
+    - [sfn-16-poster](pubs/sfn-16-poster) working files for SfN16 poster presentation.
+    - [mofo-child-manuscript2016.md](pubs/mofo-child-manuscript2016.md) draft manuscript.
 
 ## Session Info
 ```{r session-info}
