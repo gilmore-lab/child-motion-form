@@ -1,5 +1,4 @@
 \documentclass[landscape,final,paperwidth=72in,paperheight=42in,fontscale=0.285]{baposter}
-% Size of board is 6' wide x 4' tall
 \usepackage{calc}
 \usepackage{graphicx}
 \usepackage{amsmath}
@@ -11,6 +10,8 @@
 \usepackage{url}
 \usepackage{gensymb}  % Allows degree symbol
 %\usepackage[style=ieeetr]{bibtex} % Allows bibliography style ieee
+%\usepackage{sidecap} % Required for Side Captions
+
 
 \usepackage{graphicx}
 \usepackage{multicol}
@@ -95,6 +96,7 @@
   eyecatcher=true,
   headerborder=closed,
   headerheight=0.1\textheight,
+%  columns=4 %default=4 for landscape posters maximum columns=6
 %  textfont=\sc, An example of changing the text font
   headershape=roundedright,
   headershade=shadelr,
@@ -159,27 +161,38 @@ Adults show evoked brain responses to time-varying motion-defined forms over pos
      }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  %\headerbox{Displays}{name=displays,column=1,row=0}
+  \headerbox{Displays}{name=displays,column=0, below=sharing}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     {
 %      Figure and background regions were populated with white (39 cd/m^2) dots on a black (.065 cd/m^2) background at a density of 10\%; dot positions were updated at 36 Hz (F2). Each condition was presented at two speeds (1.2 and 6.0 deg/s) on a computer monitor positioned 60 cm from the viewer.
 %      Each pattern had an annular shape with an 18 deg in outer diameter and 5 deg in inner diameter; Annulus centers were displaced 15 deg from the center of the display.
 %      \vspace{3em}
-%      \includegraphics[scale=0.30]{img/optic-flow-psychophysics-display.png}
-%      \vspace{4em}
+%        \begin{figure} 
+          \centering
+          \includegraphics[scale=0.3]{img/mofo-child-tuning-dir5.jpg}
+%          \centering
+%          \caption{5 degree}
+          \includegraphics[scale=0.3]{img/mofo-child-tuning-dir45.jpg}
+%          \centering
+%         \caption{45 degree}
+          \includegraphics[scale=0.3]{img/mofo-child-tuning-dir180.jpg}
+%          \centering
+%          \caption{180 degree}
+%        \end{figure}
+%      \vspace{3em}
     }
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \headerbox{References}{name=references,column=0, below=sharing, above=bottom}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%   {
+%  {
 %      \smaller
+          %For use with external .bib file
+%          \renewcommand{\refname}{\vspace{-0.8em}} % removes "References" canned text.
+%          \bibliographystyle{plain}
+%          \bibliography{poster_landscape}.
 %      \bibliographystyle{plain}
 %      \bibliography{sfn2016bibliography}
-
- 
-      
+%
 %     \renewcommand{\section}[2]{\vskip 0.05em}
 %        \begin{thebibliography}{1}\itemsep=-0.01em
 %        \setlength{\baselineskip}{0.4em}
@@ -196,7 +209,6 @@ Adults show evoked brain responses to time-varying motion-defined forms over pos
 %        \end{thebibliography}
 %     \vspace{0.3em}
 %    }
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\headerbox{Results - Direction}{name=direction,column=1,span=2,row=0, bottomaligned=references}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
