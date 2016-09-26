@@ -10,6 +10,7 @@
 \usepackage{bm}
 \usepackage{url}
 \usepackage{gensymb}  % Allows degree symbol
+%\usepackage[style=ieeetr]{bibtex} % Allows bibliography style ieee
 
 \usepackage{graphicx}
 \usepackage{multicol}
@@ -104,14 +105,15 @@
   background=plain,
   linewidth=2pt
   }
-
-   % Title
-  {\bf{The appearance and disappearance of visual forms defined by differential motion evokes distinctive EEG responses in school-age children}\vspace{0.2em}}
+  % College Logo
+  {\includegraphics[height=5em]{img/clalogo.jpg}}
+  % Title
+  {\bf{The appearance and disappearance of visual forms defined by differential motion \\evokes distinctive EEG responses in school-age children}\vspace{0.2em}}
   % Authors
   {Rick O. Gilmore \emph{(rogilmore@psu.edu)}, Daved A. Fared, Michael G. Dexheimer, \& Andrea R. Seisler\\ \vspace{0.2em}
   Neuroscience 2016 -- Poster 4367}
   % University logo
-  {\includegraphics[height=5em]{img/psu-logo-700-319.jpg}}
+  {\includegraphics[height=5em]{img/psu-logo-new-1000-326.jpg}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Now define the boxes that make up the poster
@@ -141,7 +143,7 @@ Adults show evoked brain responses to time-varying motion-defined forms over pos
     }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Method}{name=method,column=0,below=thanks, above=bottom}
+  \headerbox{Method}{name=method,column=0,below=thanks}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     {
       School-age observers (n=37; 4.3-9.0 years, \emph{M}=6.4, 16 female) participated in this study.  
@@ -150,7 +152,7 @@ Adults show evoked brain responses to time-varying motion-defined forms over pos
       The complex domain (real and imaginary) components of each channel were analyzed using mixed-effects MANOVA, with direction difference and speed as fixed factors and participant as a random factor.  
       }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-   \headerbox{Data Sharing}{name=sharing,column=0, below=method, above=bottom}
+   \headerbox{Data Sharing}{name=sharing,column=0, below=method}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     {
        Movies of the displays, metadata about the participants, and raw data files are available at: \url{http://databrary.org/volume/144}.
@@ -169,12 +171,14 @@ Adults show evoked brain responses to time-varying motion-defined forms over pos
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%  \headerbox{References}{name=references,column=1, below=displays, above=bottom}
+% \headerbox{References}{name=references,column=0, below=sharing, above=bottom}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   {
 %      \smaller
-%      \bibliographystyle{ieee}
+%      \bibliographystyle{plain}
 %      \bibliography{sfn2016bibliography}
+
+ 
       
 %     \renewcommand{\section}[2]{\vskip 0.05em}
 %        \begin{thebibliography}{1}\itemsep=-0.01em
@@ -194,37 +198,37 @@ Adults show evoked brain responses to time-varying motion-defined forms over pos
 %    }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Results - Direction}{name=direction,column=2,span=2,row=0, bottomaligned=references}
+%\headerbox{Results - Direction}{name=direction,column=1,span=2,row=0, bottomaligned=references}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    {
-      We chose p<.0005 as our alpha level to reduce the likelihood of reporting false positives. 
-Statistically significant effects for direction were found at 1F1, 2F1, and 3F1, and these showed a broad distribution across the scalp. 
-No channels met criterion for the effect of speed at any harmonic. 
-Many, but not all channels showed the scaling of amplitude by figure/background direction difference found in adults, an effect particularly pronounced at 3F1. 
-Complex domain plots of the most reponsive channels at 2F1 and 3F1 showed consistent phase and amplitude profiles. 
+%    {
+%      We chose p<.0005 as our alpha level to reduce the likelihood of reporting false positives. 
+%Statistically significant effects for direction were found at 1F1, 2F1, and 3F1, and these showed a broad distribution across the scalp. 
+%No channels met criterion for the effect of speed at any harmonic. 
+%Many, but not all channels showed the scaling of amplitude by figure/background direction difference found in adults, an effect particularly pronounced at 3F1. 
+%Complex domain plots of the most reponsive channels at 2F1 and 3F1 showed consistent phase and amplitude profiles. 
 
-      \begin{center}
-        \includegraphics[scale=0.12]{img/mofo-child-tuning-dir5.jpg}
-        \includegraphics[scale=0.12]{img/mofo-child-tuning-dir45.jpg}
-        \includegraphics[scale=0.12]{img/mofo-child-tuning-dir180.jpg}
+%      \begin{center}
+%        \includegraphics[scale=0.12]{img/mofo-child-tuning-dir5.jpg}
+%        \includegraphics[scale=0.12]{img/mofo-child-tuning-dir45.jpg}
+%        \includegraphics[scale=0.12]{img/mofo-child-tuning-dir180.jpg}
 %        \includegraphics[scale=0.12]{img/pcorr.png}
 
 %        \includegraphics[scale=0.12]{img/rt.png}
-      \end{center}
-    }
+%      \end{center}
+%    }
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-      \headerbox{Results - Speed}{name=speed,column=4,span=2,row=0, bottomaligned=references}
+%    \headerbox{Results - Speed}{name=speed,column=4,span=2,row=0, bottomaligned=references}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         {
-         No channels met criterion for the effect of speed at any harmonic. 
+%         No channels met criterion for the effect of speed at any harmonic. 
 
 
-          \begin{center}
+ %         \begin{center}
 %            \includegraphics[scale=0.12]{img/pcorr.png}
 
 %            \includegraphics[scale=0.12]{img/rt.png}
-          \end{center}
+%          \end{center}
         }
 \end{poster}
 

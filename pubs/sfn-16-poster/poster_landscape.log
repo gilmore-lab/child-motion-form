@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 SEP 2016 13:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  26 SEP 2016 09:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -655,225 +655,23 @@ Package: palatino 2005/04/12 PSNFSS-v9.2a (SPQR)
 LaTeX Warning: Unused global option(s):
     [final].
 
-(./poster_landscape.aux)
-\openout1 = `poster_landscape.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 62.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1ppl.fd
-File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
-)
-(/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count143
-\scratchdimen=\dimen189
-\scratchbox=\box73
-\nofMPsegments=\count144
-\nofMParguments=\count145
-\everyMPshowfont=\toks35
-\MPscratchCnt=\count146
-\MPscratchDim=\dimen190
-\MPnumerator=\count147
-\makeMPintoPDFobject=\count148
-\everyMPtoPDFconversion=\toks36
-) ABD: EveryShipout initializing macros
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: custom
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: landscape 
-* h-part:(L,W,R)=(12.1637pt, 1458.67206pt, 12.1637pt)
-* v-part:(T,H,B)=(12.1637pt, 840.75562pt, 12.1637pt)
-* \paperwidth=1482.99945pt
-* \paperheight=865.08301pt
-* \textwidth=1458.67206pt
-* \textheight=840.75562pt
-* \oddsidemargin=-60.1063pt
-* \evensidemargin=-60.1063pt
-* \topmargin=-97.1063pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=10.0pt
-* \footskip=30.0pt
-* \marginparwidth=65.0pt
-* \marginparsep=11.0pt
-* \columnsep=14.99634pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-LaTeX Info: Redefining \celsius on input line 62.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 62.
-
-
-Package gensymb Warning: Not defining \perthousand.
-
-LaTeX Info: Redefining \ohm on input line 62.
-Package gensymb Info: Using \Omega for \ohm on input line 62.
-
-Package gensymb Warning: Not defining \micro.
-
-<img/psu-logo-700-319.jpg, id=29, 702.625pt x 320.19624pt>
-File: img/psu-logo-700-319.jpg Graphic file (type jpg)
-
-<use img/psu-logo-700-319.jpg>
-Package pdftex.def Info: img/psu-logo-700-319.jpg used on input line 114.
-(pdftex.def)             Requested size: 109.70982pt x 50.0pt.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 114.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 114.
-LaTeX Font Info:    Try loading font information for U+msa on input line 114.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 114.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 134.
-LaTeX Font Info:    Font shape `T1/ppl/bx/sc' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/sc' tried instead on input line 134.
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 157.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-<img/mofo-child-tuning-dir5.jpg, id=32, 1106.1325pt x 238.8925pt>
-File: img/mofo-child-tuning-dir5.jpg Graphic file (type jpg)
-
-<use img/mofo-child-tuning-dir5.jpg>
-Package pdftex.def Info: img/mofo-child-tuning-dir5.jpg used on input line 214.
-
-(pdftex.def)             Requested size: 132.73016pt x 28.66585pt.
-
-<img/mofo-child-tuning-dir45.jpg, id=33, 1106.1325pt x 238.8925pt>
-File: img/mofo-child-tuning-dir45.jpg Graphic file (type jpg)
-
-<use img/mofo-child-tuning-dir45.jpg>
-Package pdftex.def Info: img/mofo-child-tuning-dir45.jpg used on input line 214
-.
-(pdftex.def)             Requested size: 132.73016pt x 28.66585pt.
-
-<img/mofo-child-tuning-dir180.jpg, id=34, 1106.1325pt x 238.8925pt>
-File: img/mofo-child-tuning-dir180.jpg Graphic file (type jpg)
-
-<use img/mofo-child-tuning-dir180.jpg>
-Package pdftex.def Info: img/mofo-child-tuning-dir180.jpg used on input line 21
-4.
-(pdftex.def)             Requested size: 132.73016pt x 28.66585pt.
-
-
-! Package pgf Error: No shape named referencesse is known.
-
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.214     }
-           
-? H
-This error message was generated by an \errmessage
-command, so I can't give any explicit help.
-Pretend that you're Hercule Poirot: Examine all clues,
-and deduce the truth by order and method.
-
+(./poster_landscape.aux
+! Undefined control sequence.
+l.2 \abx@aux@sortscheme
+                       {none}
 ? 
 ! Emergency stop.
- ...                                              
-                                                  
-l.214     }
-           
+l.2 \abx@aux@sortscheme
+                       {none}
 End of file on the terminal!
 
  
 Here is how much of TeX's memory you used:
- 15509 strings out of 493014
- 315244 string characters out of 6133351
- 356339 words of memory out of 5000000
- 18698 multiletter control sequences out of 15000+600000
- 18638 words of font info for 43 fonts, out of 8000000 for 9000
+ 14238 strings out of 493014
+ 290661 string characters out of 6133351
+ 325657 words of memory out of 5000000
+ 17501 multiletter control sequences out of 15000+600000
+ 4403 words of font info for 15 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,10n,76p,718b,997s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,1n,76p,435b,127s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
