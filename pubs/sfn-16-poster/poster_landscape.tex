@@ -11,6 +11,12 @@
 \usepackage{gensymb}  % Allows degree symbol
 %\usepackage[style=ieeetr]{bibtex} % Allows bibliography style ieee
 %\usepackage{sidecap} % Required for Side Captions
+%\usepackage{floatrow} % use to create side captions
+%\usepackage[margin=1cm]{caption}
+%\usepackage{subfig}
+
+\usepackage{caption}
+\captionsetup[figure]{font=footnotesize, labelsep=period}
 
 
 \usepackage{graphicx}
@@ -21,7 +27,7 @@
 %\usepackage{bookman}
 \usepackage{palatino}
 
-\newcommand{\captionfont}{\footnotesize}
+%\newcommand{\captionfont}{\footnotesize}
 
 \graphicspath{{images/}{../images/}}
 \usetikzlibrary{calc}
@@ -47,7 +53,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setlength{\columnsep}{1.5em}
 \setlength{\columnseprule}{0mm}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Save space in lists. Use this after the opening of the list
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -56,7 +61,6 @@
 \setlength{\parskip}{0pt}%
 \setlength{\parsep}{0pt}%
 }
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Begin of Document
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -133,19 +137,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     {
       Differential motion patterns aid in the segmentation of visual figures from the background. 
-Adults show evoked brain responses to time-varying motion-defined forms over posterior scalp regions (Fesi et al., 2011; 2014); in these participants, EEG amplitudes scale with the magnitude of direction differences between the figure and background.
-      Little is known about the development of brain responses to motion-defined forms in childhood. In this study, we measured steady-state visual evoked potential (SSVEP) responses in school-age participants and compared the resulting patterns to previous results of adults.    
+Adults show evoked brain responses to time-varying motion-defined forms over posterior scalp regions \cite{fesi_cortical_2014},\cite{fesi_distinct_2011}; in these participants, EEG amplitudes scale with the magnitude of direction differences between the figure and background.
+      Little is known about the development of brain responses to motion-defined forms in childhood \cite{gilmore_childrens_2016}. In this study, we measured steady-state visual evoked potential (SSVEP) responses in school-age participants and compared the resulting patterns to previous results of adults.    
     }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Acknowledgements}{name=thanks,column=0,below=abstract}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    {
-      This material is based upon work supported by the National Science Foundation under Grant Number BCS-1147440. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.  
-    }
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Method}{name=method,column=0,below=thanks}
+  \headerbox{Method}{name=method,column=0,below=abstract}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     {
       School-age observers (n=37; 4.3-9.0 years, \emph{M}=6.4, 16 female) participated in this study.  
@@ -153,43 +150,85 @@ Adults show evoked brain responses to time-varying motion-defined forms over pos
       EEG was collected at 432.43 Hz using a 128 channel EGI system and PowerDiva Video 3.4 software and submitted to a discrete Fourier transform. 
       The complex domain (real and imaginary) components of each channel were analyzed using mixed-effects MANOVA, with direction difference and speed as fixed factors and participant as a random factor.  
       }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \headerbox{Displays}{name=displays,column=0, below=method}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    {
+      \vspace{3em}
+        
+          \begin{center}
+            \includegraphics[scale=0.3]{img/mofo-child-tuning-dir5.jpg}
+%              \caption{5 degree}
+            \includegraphics[scale=0.3]{img/mofo-child-tuning-dir45.jpg}
+%              \caption{45 degree}
+            \includegraphics[scale=0.3]{img/mofo-child-tuning-dir180.jpg}
+%               \caption{180 degree}
+          \end{center}
+      \vspace{3em}
+    }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\headerbox{Results - Direction}{name=direction,column=1,span=3,row=0}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    {
+%      We chose p<.0005 as our alpha level to reduce the likelihood of reporting false positives. 
+%Statistically significant effects for direction were found at 1F1, 2F1, and 3F1, and these showed a broad distribution across the scalp. 
+%No channels met criterion for the effect of speed at any harmonic. 
+%Many, but not all channels showed the scaling of amplitude by figure/background direction difference found in adults, an effect particularly pronounced at 3F1. 
+%Complex domain plots of the most reponsive channels at 2F1 and 3F1 showed consistent phase and amplitude profiles. 
+
+      \begin{center}
+        \includegraphics[scale=0.3]{../../figs/1F1/analyze-and-plot-main-effects-1.png}
+        \includegraphics[scale=0.3]{../../figs/2F1/analyze-and-plot-main-effects-1.png}
+        \includegraphics[scale=0.3]{../../figs/3F1/analyze-and-plot-main-effects-1.png}
+%        \includegraphics[scale=0.12]{img/pcorr.png}
+
+%        \includegraphics[scale=0.12]{img/rt.png}
+      \end{center}
+    }
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    \headerbox{Results - Speed}{name=speed,column=4,span=2,row=0, bottomaligned=references}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        {
+%         No channels met criterion for the effect of speed at any harmonic. 
+
+
+ %         \begin{center}
+%            \includegraphics[scale=0.12]{img/pcorr.png}
+
+%            \includegraphics[scale=0.12]{img/rt.png}
+%          \end{center}
+        }
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-   \headerbox{Data Sharing}{name=sharing,column=0, below=method}
+   \headerbox{Data Sharing}{name=sharing,column=2, below=direction}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     {
        Movies of the displays, metadata about the participants, and raw data files are available at: \url{http://databrary.org/volume/144}.
-     }
-
+     }  
+     
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Displays}{name=displays,column=0, below=sharing}
+  \headerbox{Acknowledgements}{name=thanks,column=2,below=sharing, above=bottom}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     {
-%      Figure and background regions were populated with white (39 cd/m^2) dots on a black (.065 cd/m^2) background at a density of 10\%; dot positions were updated at 36 Hz (F2). Each condition was presented at two speeds (1.2 and 6.0 deg/s) on a computer monitor positioned 60 cm from the viewer.
-%      Each pattern had an annular shape with an 18 deg in outer diameter and 5 deg in inner diameter; Annulus centers were displaced 15 deg from the center of the display.
-%      \vspace{3em}
-%        \begin{figure} 
-          \centering
-          \includegraphics[scale=0.3]{img/mofo-child-tuning-dir5.jpg}
-%          \centering
-%          \caption{5 degree}
-          \includegraphics[scale=0.3]{img/mofo-child-tuning-dir45.jpg}
-%          \centering
-%         \caption{45 degree}
-          \includegraphics[scale=0.3]{img/mofo-child-tuning-dir180.jpg}
-%          \centering
-%          \caption{180 degree}
-%        \end{figure}
-%      \vspace{3em}
-    }
+      This material is based upon work supported by the National Science Foundation under Grant Number BCS-1147440. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.  
+    }    
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \headerbox{References}{name=references,column=0, below=sharing, above=bottom}
+ \headerbox{References}{name=references,column=3, below=direction, above=bottom}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%  {
-%      \smaller
-          %For use with external .bib file
+  {
+          \smaller
+  %For use with external .bib file
 %          \renewcommand{\refname}{\vspace{-0.8em}} % removes "References" canned text.
-%          \bibliographystyle{plain}
-%          \bibliography{poster_landscape}.
+          
+          \renewcommand{\section}[2]{\vskip 0.05em}
+        
+          \bibliographystyle{plain}
+          \bibliography{poster_landscape}
 %      \bibliographystyle{plain}
 %      \bibliography{sfn2016bibliography}
 %
@@ -208,40 +247,9 @@ Adults show evoked brain responses to time-varying motion-defined forms over pos
 %          \newblock {, 68-75.}
 %        \end{thebibliography}
 %     \vspace{0.3em}
-%    }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\headerbox{Results - Direction}{name=direction,column=1,span=2,row=0, bottomaligned=references}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%    {
-%      We chose p<.0005 as our alpha level to reduce the likelihood of reporting false positives. 
-%Statistically significant effects for direction were found at 1F1, 2F1, and 3F1, and these showed a broad distribution across the scalp. 
-%No channels met criterion for the effect of speed at any harmonic. 
-%Many, but not all channels showed the scaling of amplitude by figure/background direction difference found in adults, an effect particularly pronounced at 3F1. 
-%Complex domain plots of the most reponsive channels at 2F1 and 3F1 showed consistent phase and amplitude profiles. 
-
-%      \begin{center}
-%        \includegraphics[scale=0.12]{img/mofo-child-tuning-dir5.jpg}
-%        \includegraphics[scale=0.12]{img/mofo-child-tuning-dir45.jpg}
-%        \includegraphics[scale=0.12]{img/mofo-child-tuning-dir180.jpg}
-%        \includegraphics[scale=0.12]{img/pcorr.png}
-
-%        \includegraphics[scale=0.12]{img/rt.png}
-%      \end{center}
-%    }
-
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%    \headerbox{Results - Speed}{name=speed,column=4,span=2,row=0, bottomaligned=references}
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        {
-%         No channels met criterion for the effect of speed at any harmonic. 
+    }
 
 
- %         \begin{center}
-%            \includegraphics[scale=0.12]{img/pcorr.png}
-
-%            \includegraphics[scale=0.12]{img/rt.png}
-%          \end{center}
-        }
 \end{poster}
 
 \end{document}

@@ -1,3 +1,21 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{fesi_cortical_2014}
+Jeremy~D. Fesi, Amanda~L. Thomas, and Rick~O. Gilmore.
+\newblock Cortical responses to optic flow and motion contrast across patterns
+  and speeds.
+\newblock {\em Vision Research}, 100:56--71, July 2014.
+
+\bibitem{fesi_distinct_2011}
+Jeremy~D. Fesi, Michael~P. Yannes, Danielle~D. Brinckman, Anthony~M. Norcia,
+  Justin~M. Ales, and Rick~O. Gilmore.
+\newblock Distinct cortical responses to 2d figures defined by motion contrast.
+\newblock {\em Vision Research}, 51(19):2110--2120, October 2011.
+
+\bibitem{gilmore_childrens_2016}
+Rick~O. Gilmore, Amanda~L. Thomas, and Jeremy Fesi.
+\newblock Children's {Brain} {Responses} to {Optic} {Flow} {Vary} by {Pattern}
+  {Type} and {Motion} {Speed}.
+\newblock {\em PLOS ONE}, 11(6):e0157911, June 2016.
 
 \end{thebibliography}
