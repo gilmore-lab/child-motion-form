@@ -15,11 +15,13 @@
 %\usepackage[margin=1cm]{caption}
 %\usepackage{subfig}
 
-\usepackage{caption}
-\captionsetup[figure]{font=footnotesize, labelsep=period}
+\usepackage{float}
+\usepackage[font=large,skip=0pt]{caption}
+
+\captionsetup[figure]{font=small,skip=0pt,labelformat=empty}
+%\captionsetup[figure]{font=footnotesize, labelsep=period}
 
 
-\usepackage{graphicx}
 \usepackage{multicol}
 
 %\usepackage{times}
@@ -155,17 +157,41 @@ Adults show evoked brain responses to time-varying motion-defined forms over pos
   \headerbox{Displays}{name=displays,column=0, below=method}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     {
-      \vspace{3em}
-        
-          \begin{center}
-            \includegraphics[scale=0.3]{img/mofo-child-tuning-dir5.jpg}
+      \vspace{2em}
+
+%\begin{center}
+%  \includegraphics[scale=0.3]{img/mofo-child-tuning-dir5.jpg}
+%  \captionof{figure}{5 degree}
+%  \label{img/mofo-child-tuning-dir5.jpg}
+%\end{center}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.3]{img/mofo-child-tuning-dir5.jpg}
+  \caption{5 degree}
+  %\label{mofo-child-tuning-dir5.jpg}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.3]{img/mofo-child-tuning-dir45.jpg}
+  \caption{45 degree}\label{mofo-child-tuning-dir45.jpg}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.3]{img/mofo-child-tuning-dir180.jpg}
+  \caption{180 degree}\label{mofo-child-tuning-dir180.jpg}
+\end{figure}      
+%          \begin{center}
+%            \includegraphics[scale=0.3]{img/mofo-child-tuning-dir5.jpg}
 %              \caption{5 degree}
-            \includegraphics[scale=0.3]{img/mofo-child-tuning-dir45.jpg}
+%            \includegraphics[scale=0.3]{img/mofo-child-tuning-dir45.jpg}
 %              \caption{45 degree}
-            \includegraphics[scale=0.3]{img/mofo-child-tuning-dir180.jpg}
+%            \includegraphics[scale=0.3]{img/mofo-child-tuning-dir180.jpg}
 %               \caption{180 degree}
-          \end{center}
-      \vspace{3em}
+%          \end{center}
+      \vspace{2em}
     }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -177,15 +203,32 @@ Adults show evoked brain responses to time-varying motion-defined forms over pos
 %No channels met criterion for the effect of speed at any harmonic. 
 %Many, but not all channels showed the scaling of amplitude by figure/background direction difference found in adults, an effect particularly pronounced at 3F1. 
 %Complex domain plots of the most reponsive channels at 2F1 and 3F1 showed consistent phase and amplitude profiles. 
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.3]{../../figs/1F1/analyze-and-plot-main-effects-1.png}
+  \caption{1F1}\label{analyze-and-plot-main-effects-1.png}
+\end{figure}
 
-      \begin{center}
-        \includegraphics[scale=0.3]{../../figs/1F1/analyze-and-plot-main-effects-1.png}
-        \includegraphics[scale=0.3]{../../figs/2F1/analyze-and-plot-main-effects-1.png}
-        \includegraphics[scale=0.3]{../../figs/3F1/analyze-and-plot-main-effects-1.png}
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.3]{../../figs/2F1/analyze-and-plot-main-effects-1.png}
+  \caption{2F1}\label{analyze-and-plot-main-effects-1.png}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.3]{../../figs/3F1/analyze-and-plot-main-effects-1.png}
+  \caption{3F1}\label{analyze-and-plot-main-effects-1.png}
+\end{figure}
+
+%      \begin{center}
+%        \includegraphics[scale=0.3]{../../figs/1F1/analyze-and-plot-main-effects-1.png}
+%        \includegraphics[scale=0.3]{../../figs/2F1/analyze-and-plot-main-effects-1.png}
+%        \includegraphics[scale=0.3]{../../figs/3F1/analyze-and-plot-main-effects-1.png}
 %        \includegraphics[scale=0.12]{img/pcorr.png}
 
 %        \includegraphics[scale=0.12]{img/rt.png}
-      \end{center}
+%      \end{center}
     }
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
