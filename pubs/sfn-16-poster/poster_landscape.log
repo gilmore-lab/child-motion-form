@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  30 SEP 2016 08:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  30 SEP 2016 11:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -674,10 +674,6 @@ Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
 \colbreak@box=\box74
 \mc@col@check@num=\count144
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/lipsum/lipsum.sty
-Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count145
-)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2016/04/27 version 3.91 text color boxes
 
@@ -695,15 +691,15 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count146
+\etb@tempcnta=\count145
 )
 \tcb@titlebox=\box75
 \tcb@upperbox=\box76
 \tcb@lowerbox=\box77
 \tcb@phantombox=\box78
-\c@tcbbreakpart=\count147
-\c@tcblayer=\count148
-\tcolorbox@number=\count149
+\c@tcbbreakpart=\count146
+\c@tcblayer=\count147
+\tcolorbox@number=\count148
 \tcb@temp=\box79
 \tcb@temp=\box80
 \tcb@temp=\box81
@@ -718,7 +714,12 @@ Package: palatino 2005/04/12 PSNFSS-v9.2a (SPQR)
 LaTeX Warning: Unused global option(s):
     [final].
 
-(./poster_landscape.aux)
+(./poster_landscape.aux
+
+LaTeX Warning: Label `3F1-analyze-and-plot-main-effects-1.png' multiply defined
+.
+
+)
 \openout1 = `poster_landscape.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
@@ -734,22 +735,21 @@ LaTeX Font Info:    ... okay on input line 74.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
 LaTeX Font Info:    ... okay on input line 74.
 LaTeX Font Info:    Try loading font information for T1+ppl on input line 74.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1ppl.fd
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count150
+\scratchcounter=\count149
 \scratchdimen=\dimen196
 \scratchbox=\box83
-\nofMPsegments=\count151
-\nofMParguments=\count152
+\nofMPsegments=\count150
+\nofMParguments=\count151
 \everyMPshowfont=\toks39
-\MPscratchCnt=\count153
+\MPscratchCnt=\count152
 \MPscratchDim=\dimen197
-\MPnumerator=\count154
-\makeMPintoPDFobject=\count155
+\MPnumerator=\count153
+\makeMPintoPDFobject=\count154
 \everyMPtoPDFconversion=\toks40
 ) ABD: EveryShipout initializing macros
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
@@ -843,18 +843,19 @@ Package gensymb Warning: Not defining \micro.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-<img/clalogo.jpg, id=29, 69.25874pt x 104.39pt>
-File: img/clalogo.jpg Graphic file (type jpg)
- <use img/clalogo.jpg>
-Package pdftex.def Info: img/clalogo.jpg used on input line 130.
-(pdftex.def)             Requested size: 33.173pt x 50.0pt.
+<img/penn_state_cla_logo_new_210-89.jpg, id=29, 210.7875pt x 89.33376pt>
+File: img/penn_state_cla_logo_new_210-89.jpg Graphic file (type jpg)
 
-<img/psu-logo-new-1000-326.jpg, id=30, 1003.75pt x 327.2225pt>
-File: img/psu-logo-new-1000-326.jpg Graphic file (type jpg)
+<use img/penn_state_cla_logo_new_210-89.jpg>
+Package pdftex.def Info: img/penn_state_cla_logo_new_210-89.jpg used on input l
+ine 130.
+(pdftex.def)             Requested size: 141.57425pt x 60.0pt.
 
-<use img/psu-logo-new-1000-326.jpg>
-Package pdftex.def Info: img/psu-logo-new-1000-326.jpg used on input line 130.
-(pdftex.def)             Requested size: 153.37415pt x 50.0pt.
+<img/databrary.png, id=30, 306.14375pt x 60.225pt>
+File: img/databrary.png Graphic file (type png)
+ <use img/databrary.png>
+Package pdftex.def Info: img/databrary.png used on input line 130.
+(pdftex.def)             Requested size: 203.34012pt x 40.0pt.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 130.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
@@ -880,7 +881,7 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-<img/mofo-child-tuning-dir5.jpg, id=33, 1106.1325pt x 238.8925pt>
+<img/mofo-child-tuning-dir5.jpg, id=34, 1106.1325pt x 238.8925pt>
 File: img/mofo-child-tuning-dir5.jpg Graphic file (type jpg)
 
 <use img/mofo-child-tuning-dir5.jpg>
@@ -888,7 +889,7 @@ Package pdftex.def Info: img/mofo-child-tuning-dir5.jpg used on input line 181.
 
 (pdftex.def)             Requested size: 331.84232pt x 71.66829pt.
 
-<img/mofo-child-tuning-dir45.jpg, id=34, 1106.1325pt x 238.8925pt>
+<img/mofo-child-tuning-dir45.jpg, id=35, 1106.1325pt x 238.8925pt>
 File: img/mofo-child-tuning-dir45.jpg Graphic file (type jpg)
 
 <use img/mofo-child-tuning-dir45.jpg>
@@ -896,7 +897,7 @@ Package pdftex.def Info: img/mofo-child-tuning-dir45.jpg used on input line 181
 .
 (pdftex.def)             Requested size: 331.84232pt x 71.66829pt.
 
-<img/mofo-child-tuning-dir180.jpg, id=35, 1106.1325pt x 238.8925pt>
+<img/mofo-child-tuning-dir180.jpg, id=36, 1106.1325pt x 238.8925pt>
 File: img/mofo-child-tuning-dir180.jpg Graphic file (type jpg)
 
 <use img/mofo-child-tuning-dir180.jpg>
@@ -907,13 +908,13 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-<../../figs/1F1-analyze-and-plot-main-effects-1.png, id=36, 1574.88374pt x 502.
+<../../figs/1F1-analyze-and-plot-main-effects-1.png, id=37, 1574.88374pt x 502.
 87875pt>
 File: ../../figs/1F1-analyze-and-plot-main-effects-1.png Graphic file (type png
 )
  <use ../../figs/1F1-analyze-and-plot-main-effects-1.png>
 Package pdftex.def Info: ../../figs/1F1-analyze-and-plot-main-effects-1.png use
-d on input line 229.
+d on input line 234.
 (pdftex.def)             Requested size: 472.46877pt x 150.86478pt.
 
 <../../figs/2F1-analyze-and-plot-main-effects-1.png, id=38, 1573.88pt x 504.886
@@ -922,7 +923,7 @@ File: ../../figs/2F1-analyze-and-plot-main-effects-1.png Graphic file (type png
 )
  <use ../../figs/2F1-analyze-and-plot-main-effects-1.png>
 Package pdftex.def Info: ../../figs/2F1-analyze-and-plot-main-effects-1.png use
-d on input line 229.
+d on input line 234.
 (pdftex.def)             Requested size: 472.16765pt x 151.46703pt.
 
 <../../figs/3F1-analyze-and-plot-main-effects-1.png, id=39, 1572.87625pt x 503.
@@ -931,7 +932,7 @@ File: ../../figs/3F1-analyze-and-plot-main-effects-1.png Graphic file (type png
 )
  <use ../../figs/3F1-analyze-and-plot-main-effects-1.png>
 Package pdftex.def Info: ../../figs/3F1-analyze-and-plot-main-effects-1.png use
-d on input line 229.
+d on input line 234.
 (pdftex.def)             Requested size: 471.86652pt x 151.16591pt.
 
 <../../figs/legend-analyze-and-plot-main-effects-1.png, id=40, 544.0325pt x 98.
@@ -940,12 +941,28 @@ File: ../../figs/legend-analyze-and-plot-main-effects-1.png Graphic file (type
 png)
  <use ../../figs/legend-analyze-and-plot-main-effects-1.png>
 Package pdftex.def Info: ../../figs/legend-analyze-and-plot-main-effects-1.png 
-used on input line 229.
+used on input line 234.
 (pdftex.def)             Requested size: 163.211pt x 29.51047pt.
+
+<../../figs/2F1/plot-vector-avg-1.png, id=41, 1638.12pt x 963.6pt>
+File: ../../figs/2F1/plot-vector-avg-1.png Graphic file (type png)
+
+<use ../../figs/2F1/plot-vector-avg-1.png>
+Package pdftex.def Info: ../../figs/2F1/plot-vector-avg-1.png used on input lin
+e 234.
+(pdftex.def)             Requested size: 409.52899pt x 240.89941pt.
+
+<../../figs/3F1/plot-channel-effects-1.png, id=42, 1638.12pt x 963.6pt>
+File: ../../figs/3F1/plot-channel-effects-1.png Graphic file (type png)
+
+<use ../../figs/3F1/plot-channel-effects-1.png>
+Package pdftex.def Info: ../../figs/3F1/plot-channel-effects-1.png used on inpu
+t line 234.
+(pdftex.def)             Requested size: 409.52899pt x 240.89941pt.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 250.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 254.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -963,31 +980,36 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
  [2
 
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img/c
-lalogo.jpg> <./img/psu-logo-new-1000-326.jpg> <./img/mofo-child-tuning-dir5.jpg
-> <./img/mofo-child-tuning-dir45.jpg> <./img/mofo-child-tuning-dir180.jpg> <../
-../figs/1F1-analyze-and-plot-main-effects-1.png> <../../figs/2F1-analyze-and-pl
-ot-main-effects-1.png> <../../figs/3F1-analyze-and-plot-main-effects-1.png> <..
-/../figs/legend-analyze-and-plot-main-effects-1.png>] (./poster_landscape.aux) 
-) 
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img/p
+enn_state_cla_logo_new_210-89.jpg> <./img/databrary.png> <./img/mofo-child-tuni
+ng-dir5.jpg> <./img/mofo-child-tuning-dir45.jpg> <./img/mofo-child-tuning-dir18
+0.jpg> <../../figs/1F1-analyze-and-plot-main-effects-1.png> <../../figs/2F1-ana
+lyze-and-plot-main-effects-1.png> <../../figs/3F1-analyze-and-plot-main-effects
+-1.png> <../../figs/legend-analyze-and-plot-main-effects-1.png> <../../figs/2F1
+/plot-vector-avg-1.png> <../../figs/3F1/plot-channel-effects-1.png>] (./poster_
+landscape.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 18951 strings out of 493014
- 387763 string characters out of 6133351
- 541592 words of memory out of 5000000
- 22084 multiletter control sequences out of 15000+600000
+ 18773 strings out of 493014
+ 385975 string characters out of 6133351
+ 442096 words of memory out of 5000000
+ 21906 multiletter control sequences out of 15000+600000
  28866 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,14n,92p,819b,1157s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2016
-/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2016/texmf-
-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fo
-nts/type1/urw/palatino/uplri8a.pfb>
-Output written on poster_landscape.pdf (1 page, 838526 bytes).
+ 62i,15n,92p,819b,1171s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/201
+6/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2016/texmf
+-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/f
+onts/type1/urw/palatino/uplri8a.pfb>
+Output written on poster_landscape.pdf (1 page, 950481 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
+ 77 PDF objects out of 1000 (max. 8388607)
  33 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 160 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 170 words of extra memory for PDF output out of 10000 (max. 10000000)
 
