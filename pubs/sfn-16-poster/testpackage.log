@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  30 SEP 2016 08:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  30 SEP 2016 08:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**poster_landscape.tex
-(./poster_landscape.tex
+**testpackage
+(./testpackage.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (./baposter.cls
@@ -458,10 +458,10 @@ File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
 \baposter@basemarginright=\skip67
 \baposter@basemarginleft=\skip68
 
-Paperwidth=5203.43999pt
-Paperheight=3035.34pt
-BasePaperwidth=1482.99945pt
-BasePaperheight=865.08301pt
+Paperwidth=2392.87677pt
+Paperheight=3383.03267pt
+BasePaperwidth=765.73808pt
+BasePaperheight=1082.59523pt
 (/usr/local/texlive/2016/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
@@ -502,152 +502,38 @@ Package: pgfpages 2011/01/05 ver 0.02
 )
 \pgfpages@box@1=\box43
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/03/10 v2.15b AMS math features
-\@mathmargin=\skip69
-
-For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01 AMS text
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks29
-\ex@=\dimen170
-))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen171
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2016/03/08 v2.02 operator names
-)
-\inf@bad=\count121
-LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count122
-\leftroot@=\count123
-LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count124
-\DOTSCASE@=\count125
-LaTeX Info: Redefining \ldots on input line 394.
-LaTeX Info: Redefining \dots on input line 397.
-LaTeX Info: Redefining \cdots on input line 518.
-\Mathstrutbox@=\box44
-\strutbox@=\box45
-\big@size=\dimen172
-LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
-\macc@depth=\count126
-\c@MaxMatrixCols=\count127
-\dotsspace@=\muskip10
-\c@parentequation=\count128
-\dspbrk@lvl=\count129
-\tag@help=\toks30
-\row@=\count130
-\column@=\count131
-\maxfields@=\count132
-\andhelp@=\toks31
-\eqnshift@=\dimen173
-\alignsep@=\dimen174
-\tagshift@=\dimen175
-\tagwidth@=\dimen176
-\totwidth@=\dimen177
-\lineht@=\dimen178
-\@envbody=\toks32
-\multlinegap=\skip70
-\multlinetaggap=\skip71
-\mathdisplay@stack=\toks33
-LaTeX Info: Redefining \[ on input line 2739.
-LaTeX Info: Redefining \] on input line 2740.
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/relsize/relsize.sty
-Package: relsize 2013/03/29 ver 4.1
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/multirow/multirow.sty
-\bigstrutjot=\dimen179
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/rotating/rotating.sty
-Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
-\c@r@tfl@t=\count133
-\rotFPtop=\skip72
-\rotFPbot=\skip73
-\rot@float@box=\box46
-\rot@mess@toks=\toks34
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/bm.sty
-Package: bm 2016/02/27 v1.2a Bold Symbol Support (DPC/FMi)
-\symboldoperators=\mathgroup6
-\symboldletters=\mathgroup7
-\symboldsymbols=\mathgroup8
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 142.
-LaTeX Info: Redefining \bm on input line 208.
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip11
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/was/gensymb.sty
-Package: gensymb 2003/07/02 v1.0 (WaS)
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/float/float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count134
-\float@exts=\toks35
-\float@box=\box47
-\@float@everytoks=\toks36
-\@floatcapt=\box48
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen180
-\captionmargin@=\dimen181
-\captionwidth=\dimen182
-\caption@tempdima=\dimen183
-\caption@indent=\dimen184
-\caption@parindent=\dimen185
-\caption@hangindent=\dimen186
-)
-\c@ContinuedFloat=\count135
-Package caption Info: float package is loaded.
-Package caption Info: rotating package is loaded.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count121
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
-\c@tracingmulticols=\count136
-\mult@box=\box49
-\multicol@leftmargin=\dimen187
-\c@unbalance=\count137
-\c@collectmore=\count138
-\doublecol@number=\count139
-\multicoltolerance=\count140
-\multicolpretolerance=\count141
-\full@width=\dimen188
-\page@free=\dimen189
-\premulticols=\dimen190
-\postmulticols=\dimen191
-\multicolsep=\skip74
-\multicolbaselineskip=\skip75
-\partial@page=\box50
-\last@line=\box51
-\maxbalancingoverflow=\dimen192
-\mult@rightbox=\box52
-\mult@grightbox=\box53
-\mult@gfirstbox=\box54
-\mult@firstbox=\box55
+\c@tracingmulticols=\count122
+\mult@box=\box44
+\multicol@leftmargin=\dimen170
+\c@unbalance=\count123
+\c@collectmore=\count124
+\doublecol@number=\count125
+\multicoltolerance=\count126
+\multicolpretolerance=\count127
+\full@width=\dimen171
+\page@free=\dimen172
+\premulticols=\dimen173
+\postmulticols=\dimen174
+\multicolsep=\skip69
+\multicolbaselineskip=\skip70
+\partial@page=\box45
+\last@line=\box46
+\maxbalancingoverflow=\dimen175
+\mult@rightbox=\box47
+\mult@grightbox=\box48
+\mult@gfirstbox=\box49
+\mult@firstbox=\box50
+\@tempa=\box51
+\@tempa=\box52
+\@tempa=\box53
+\@tempa=\box54
+\@tempa=\box55
 \@tempa=\box56
 \@tempa=\box57
 \@tempa=\box58
@@ -660,31 +546,22 @@ Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
 \@tempa=\box65
 \@tempa=\box66
 \@tempa=\box67
-\@tempa=\box68
-\@tempa=\box69
-\@tempa=\box70
-\@tempa=\box71
-\@tempa=\box72
-\c@columnbadness=\count142
-\c@finalcolumnbadness=\count143
-\last@try=\dimen193
-\multicolovershoot=\dimen194
-\multicolundershoot=\dimen195
-\mult@nat@firstbox=\box73
-\colbreak@box=\box74
-\mc@col@check@num=\count144
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/lipsum/lipsum.sty
-Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count145
+\c@columnbadness=\count128
+\c@finalcolumnbadness=\count129
+\last@try=\dimen176
+\multicolovershoot=\dimen177
+\multicolundershoot=\dimen178
+\mult@nat@firstbox=\box68
+\colbreak@box=\box69
+\mc@col@check@num=\count130
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2016/04/27 version 3.91 text color boxes
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks37
-\verbatim@line=\toks38
+\every@verbatim=\toks29
+\verbatim@line=\toks30
 \verbatim@in@stream=\read2
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/environ/environ.sty
@@ -692,65 +569,78 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
-))
+)
+\@envbody=\toks31
+)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count146
+\etb@tempcnta=\count131
 )
-\tcb@titlebox=\box75
-\tcb@upperbox=\box76
-\tcb@lowerbox=\box77
-\tcb@phantombox=\box78
-\c@tcbbreakpart=\count147
-\c@tcblayer=\count148
-\tcolorbox@number=\count149
-\tcb@temp=\box79
-\tcb@temp=\box80
-\tcb@temp=\box81
-\tcb@temp=\box82
+\tcb@titlebox=\box70
+\tcb@upperbox=\box71
+\tcb@lowerbox=\box72
+\tcb@phantombox=\box73
+\c@tcbbreakpart=\count132
+\c@tcblayer=\count133
+\tcolorbox@number=\count134
+\tcb@temp=\box74
+\tcb@temp=\box75
+\tcb@temp=\box76
+\tcb@temp=\box77
 \tcb@out=\write4
 \tcb@record@out=\write5
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/palatino.sty
-Package: palatino 2005/04/12 PSNFSS-v9.2a (SPQR) 
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '3.91'
+\c@tcbrastercolumn=\count135
+\c@tcbrasterrow=\count136
+\c@tcbraster=\count137
+) (/usr/local/texlive/2016/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '3.91'
+\tcb@waterbox=\box78
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '3.91'
+)) (/usr/local/texlive/2016/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '3.91'
+\tcbfitdim=\dimen179
+\tcb@lowerfitdim=\dimen180
+\tcb@upperfitdim=\dimen181
+\tcb@cur@hbadness=\count138
 )
 
 LaTeX Warning: Unused global option(s):
     [final].
 
-(./poster_landscape.aux)
-\openout1 = `poster_landscape.aux'.
+(./testpackage.aux)
+\openout1 = `testpackage.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 74.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1ppl.fd
-File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
-)
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count150
-\scratchdimen=\dimen196
-\scratchbox=\box83
-\nofMPsegments=\count151
-\nofMParguments=\count152
-\everyMPshowfont=\toks39
-\MPscratchCnt=\count153
-\MPscratchDim=\dimen197
-\MPnumerator=\count154
-\makeMPintoPDFobject=\count155
-\everyMPtoPDFconversion=\toks40
+\scratchcounter=\count139
+\scratchdimen=\dimen182
+\scratchbox=\box79
+\nofMPsegments=\count140
+\nofMParguments=\count141
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count142
+\MPscratchDim=\dimen183
+\MPnumerator=\count143
+\makeMPintoPDFobject=\count144
+\everyMPtoPDFconversion=\toks33
 ) ABD: EveryShipout initializing macros
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
@@ -803,16 +693,16 @@ e
 * paper: custom
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: landscape 
-* h-part:(L,W,R)=(12.1637pt, 1458.67206pt, 12.1637pt)
-* v-part:(T,H,B)=(12.1637pt, 840.75562pt, 12.1637pt)
-* \paperwidth=1482.99945pt
-* \paperheight=865.08301pt
-* \textwidth=1458.67206pt
-* \textheight=840.75562pt
-* \oddsidemargin=-60.1063pt
-* \evensidemargin=-60.1063pt
-* \topmargin=-97.1063pt
+* modes: 
+* h-part:(L,W,R)=(13.65762pt, 738.42284pt, 13.65762pt)
+* v-part:(T,H,B)=(13.65762pt, 1055.27998pt, 13.65762pt)
+* \paperwidth=765.73808pt
+* \paperheight=1082.59523pt
+* \textwidth=738.42284pt
+* \textheight=1055.27998pt
+* \oddsidemargin=-58.61237pt
+* \evensidemargin=-58.61237pt
+* \topmargin=-95.61237pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -830,126 +720,61 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \celsius on input line 74.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 74.
-
-
-Package gensymb Warning: Not defining \perthousand.
-
-LaTeX Info: Redefining \ohm on input line 74.
-Package gensymb Info: Using \Omega for \ohm on input line 74.
-
-Package gensymb Warning: Not defining \micro.
-
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: End \AtBeginDocument code.
-<img/clalogo.jpg, id=29, 69.25874pt x 104.39pt>
-File: img/clalogo.jpg Graphic file (type jpg)
- <use img/clalogo.jpg>
-Package pdftex.def Info: img/clalogo.jpg used on input line 130.
-(pdftex.def)             Requested size: 33.173pt x 50.0pt.
-
-<img/psu-logo-new-1000-326.jpg, id=30, 1003.75pt x 327.2225pt>
-File: img/psu-logo-new-1000-326.jpg Graphic file (type jpg)
-
-<use img/psu-logo-new-1000-326.jpg>
-Package pdftex.def Info: img/psu-logo-new-1000-326.jpg used on input line 130.
-(pdftex.def)             Requested size: 153.37415pt x 50.0pt.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 130.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 130.
-LaTeX Font Info:    Try loading font information for U+msa on input line 130.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 130.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 150.
-LaTeX Font Info:    Font shape `T1/ppl/bx/sc' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/sc' tried instead on input line 150.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 58.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 58.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-
-<img/mofo-child-tuning-dir5.jpg, id=33, 1106.1325pt x 238.8925pt>
-File: img/mofo-child-tuning-dir5.jpg Graphic file (type jpg)
-
-<use img/mofo-child-tuning-dir5.jpg>
-Package pdftex.def Info: img/mofo-child-tuning-dir5.jpg used on input line 181.
-
-(pdftex.def)             Requested size: 331.84232pt x 71.66829pt.
-
-<img/mofo-child-tuning-dir45.jpg, id=34, 1106.1325pt x 238.8925pt>
-File: img/mofo-child-tuning-dir45.jpg Graphic file (type jpg)
-
-<use img/mofo-child-tuning-dir45.jpg>
-Package pdftex.def Info: img/mofo-child-tuning-dir45.jpg used on input line 181
-.
-(pdftex.def)             Requested size: 331.84232pt x 71.66829pt.
-
-<img/mofo-child-tuning-dir180.jpg, id=35, 1106.1325pt x 238.8925pt>
-File: img/mofo-child-tuning-dir180.jpg Graphic file (type jpg)
-
-<use img/mofo-child-tuning-dir180.jpg>
-Package pdftex.def Info: img/mofo-child-tuning-dir180.jpg used on input line 18
-1.
-(pdftex.def)             Requested size: 331.84232pt x 71.66829pt.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-
-<../../figs/1F1-analyze-and-plot-main-effects-1.png, id=36, 1574.88374pt x 502.
-87875pt>
-File: ../../figs/1F1-analyze-and-plot-main-effects-1.png Graphic file (type png
-)
- <use ../../figs/1F1-analyze-and-plot-main-effects-1.png>
-Package pdftex.def Info: ../../figs/1F1-analyze-and-plot-main-effects-1.png use
-d on input line 229.
-(pdftex.def)             Requested size: 472.46877pt x 150.86478pt.
-
-<../../figs/2F1-analyze-and-plot-main-effects-1.png, id=38, 1573.88pt x 504.886
-25pt>
-File: ../../figs/2F1-analyze-and-plot-main-effects-1.png Graphic file (type png
-)
- <use ../../figs/2F1-analyze-and-plot-main-effects-1.png>
-Package pdftex.def Info: ../../figs/2F1-analyze-and-plot-main-effects-1.png use
-d on input line 229.
-(pdftex.def)             Requested size: 472.16765pt x 151.46703pt.
-
-<../../figs/3F1-analyze-and-plot-main-effects-1.png, id=39, 1572.87625pt x 503.
-8825pt>
-File: ../../figs/3F1-analyze-and-plot-main-effects-1.png Graphic file (type png
-)
- <use ../../figs/3F1-analyze-and-plot-main-effects-1.png>
-Package pdftex.def Info: ../../figs/3F1-analyze-and-plot-main-effects-1.png use
-d on input line 229.
-(pdftex.def)             Requested size: 471.86652pt x 151.16591pt.
-
-<../../figs/legend-analyze-and-plot-main-effects-1.png, id=40, 544.0325pt x 98.
-3675pt>
-File: ../../figs/legend-analyze-and-plot-main-effects-1.png Graphic file (type 
-png)
- <use ../../figs/legend-analyze-and-plot-main-effects-1.png>
-Package pdftex.def Info: ../../figs/legend-analyze-and-plot-main-effects-1.png 
-used on input line 229.
-(pdftex.def)             Requested size: 163.211pt x 29.51047pt.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 250.
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+<example-image.png, id=31, 401.5pt x 301.125pt>
+File: example-image.png Graphic file (type png)
+ <use example-image.png>
+Package pdftex.def Info: example-image.png used on input line 111.
+(pdftex.def)             Requested size: 401.49901pt x 301.12425pt.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
+
+LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <3.97781> not available
+(Font)              size <5> substituted on input line 111.
+
+
+LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <3.03725> not available
+(Font)              size <5> substituted on input line 111.
+
+<example-image-a.png, id=32, 401.5pt x 301.125pt>
+File: example-image-a.png Graphic file (type png)
+ <use example-image-a.png>
+Package pdftex.def Info: example-image-a.png used on input line 111.
+(pdftex.def)             Requested size: 401.49901pt x 301.12425pt.
+
+
+LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <4.29993> not available
+(Font)              size <5> substituted on input line 111.
+
+
+LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <3.44992> not available
+(Font)              size <5> substituted on input line 111.
+
+<example-image-b.png, id=33, 401.5pt x 301.125pt>
+File: example-image-b.png Graphic file (type png)
+ <use example-image-b.png>
+Package pdftex.def Info: example-image-b.png used on input line 111.
+(pdftex.def)             Requested size: 401.49901pt x 301.12425pt.
+
+<example-image-c.png, id=34, 401.5pt x 301.125pt>
+File: example-image-c.png Graphic file (type png)
+ <use example-image-c.png>
+Package pdftex.def Info: example-image-c.png used on input line 111.
+(pdftex.def)             Requested size: 401.49901pt x 301.12425pt.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -957,37 +782,40 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-(./poster_landscape.bbl)
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
- [2
+[2
 
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img/c
-lalogo.jpg> <./img/psu-logo-new-1000-326.jpg> <./img/mofo-child-tuning-dir5.jpg
-> <./img/mofo-child-tuning-dir45.jpg> <./img/mofo-child-tuning-dir180.jpg> <../
-../figs/1F1-analyze-and-plot-main-effects-1.png> <../../figs/2F1-analyze-and-pl
-ot-main-effects-1.png> <../../figs/3F1-analyze-and-plot-main-effects-1.png> <..
-/../figs/legend-analyze-and-plot-main-effects-1.png>] (./poster_landscape.aux) 
-) 
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </usr/lo
+cal/texlive/2016/texmf-dist/tex/latex/mwe/example-image.png> </usr/local/texliv
+e/2016/texmf-dist/tex/latex/mwe/example-image-a.png> </usr/local/texlive/2016/t
+exmf-dist/tex/latex/mwe/example-image-b.png> </usr/local/texlive/2016/texmf-dis
+t/tex/latex/mwe/example-image-c.png>] (./testpackage.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.96275pt have occurred.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 18951 strings out of 493014
- 387763 string characters out of 6133351
- 541592 words of memory out of 5000000
- 22084 multiletter control sequences out of 15000+600000
- 28866 words of font info for 58 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 62i,14n,92p,819b,1157s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2016
-/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2016/texmf-
-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fo
-nts/type1/urw/palatino/uplri8a.pfb>
-Output written on poster_landscape.pdf (1 page, 838526 bytes).
+ 17636 strings out of 493014
+ 385177 string characters out of 6133351
+ 610053 words of memory out of 5000000
+ 20863 multiletter control sequences out of 15000+600000
+ 10413 words of font info for 23 fonts, out of 8000000 for 9000
+ 1143 hyphenation exceptions out of 8191
+ 62i,12n,83p,951b,1575s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/lo
+cal/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfxc1440.pfb></usr/loca
+l/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfxc2488.pfb>
+Output written on testpackage.pdf (1 page, 114187 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 66 PDF objects out of 1000 (max. 8388607)
+ 35 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 160 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 135 words of extra memory for PDF output out of 10000 (max. 10000000)
 

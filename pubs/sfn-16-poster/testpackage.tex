@@ -1,0 +1,121 @@
+%\documentclass[landscape,final,paperwidth=72in,paperheight=42in,fontscale=0.285]{baposter}
+
+
+\documentclass[portrait,final,a0paper,fontscale=0.32]{baposter}
+
+\usepackage{lipsum}
+\usepackage{multicol}
+\usepackage{tcolorbox}
+\newtcolorbox{demobox}[1][]{colback=blue!5!white,colframe=blue!75!black,width=0.48\linewidth,nobeforeafter,box align=top,before=\noindent,#1}
+
+\tcbuselibrary{raster,skins,fitting}
+
+\setlength{\columnsep}{1.5em}
+\setlength{\columnseprule}{0mm}
+
+\begin{document}
+
+\definecolor{lightblue}{rgb}{0.145,0.6666,1}
+\hyphenation{resolution occlusions}
+
+\begin{poster}%
+  % Poster Options
+  {
+  % Show grid to help with alignment
+  grid=false,
+  % Column spacing
+  colspacing=1em,
+  % Color style
+  bgColorOne=white,
+  bgColorTwo=white,
+  borderColor=lightblue,
+  headerColorOne=black,
+  headerColorTwo=lightblue,
+  headerFontColor=white,
+  boxColorOne=white,
+  boxColorTwo=lightblue,
+  textborder=roundedleft,
+  eyecatcher=true,
+  headerborder=closed,
+  headerheight=0.15\textheight,
+  headershape=roundedright,
+  headershade=shadelr,
+  headerfont=\Large\bf\textsc, %Sans Serif
+  textfont={\setlength{\parindent}{1.5em}},
+  boxshade=plain,
+  background=plain,
+  linewidth=2pt
+  }
+  % Eye Catcher
+  {}
+  %{\includegraphics[height=5em]{images/logoUPM.pdf}} 
+  % Title
+  {\bf\textsc{Tittle}\vspace{0.5em}}
+  % Authors
+  {Authors\\
+   University\\
+    mail@mail.com}
+
+
+  \headerbox{Abstract}{name=problem,column=0,span=3, row=0}{
+Text
+
+    }
+  \headerbox{Introduction}{name=introduction,column=0,  below=problem}{
+Text
+
+  }
+
+  \headerbox{References}{name=references,column=0, above=bottom}{
+Text
+
+  }
+
+  \headerbox{Conclusions}{name=results,column=1,span=2, above=bottom}{
+Text
+
+ } 
+ \headerbox{Results}{name=Shaped-Beam,below=problem, above=results,column=1,span=2,row=0}{
+\begin{demobox}[title=First results]
+\lipsum[1]
+\end{demobox}\hfill
+\begin{demobox}[title=Second results]
+\lipsum[2]
+\end{demobox}
+
+\begin{tcbraster}[raster columns=3,raster rows=3,raster height=0.4\linewidth,
+enhanced,size=small,sharp corners,arc=8mm,colframe=red!50!black,
+colback=yellow!10!white,watermark overzoom=1.0,fit algorithm=hybrid* ]
+\begin{tcolorbox}[rounded corners=northwest,boxrule=0pt,
+watermark graphics=example-image]\end{tcolorbox}
+\tcboxfit{\lipsum[1]}
+\begin{tcolorbox}[rounded corners=northeast,boxrule=0pt,
+watermark graphics=example-image-a]\end{tcolorbox}
+\tcboxfit{\lipsum[2]}
+\begin{tcolorbox}[valign=center,center upper]Nine Boxes.\end{tcolorbox}
+\tcboxfit{\lipsum[3]}
+\begin{tcolorbox}[rounded corners=southwest,boxrule=0pt,
+watermark graphics=example-image-b]\end{tcolorbox}
+\tcboxfit{\lipsum[4]}
+\begin{tcolorbox}[rounded corners=southeast,boxrule=0pt,
+watermark graphics=example-image-c]\end{tcolorbox}
+\end{tcbraster}
+
+\begin{multicols}{2}
+\section*{Stuff}
+\lipsum[3-4]
+\section*{Other stuff}
+\lipsum[5]
+\end{multicols}
+
+}
+
+  \headerbox{Some Maths}{name=method,column=0,below=introduction,above=references}{
+
+Text
+
+  }
+
+\end{poster}
+
+\end{document}
