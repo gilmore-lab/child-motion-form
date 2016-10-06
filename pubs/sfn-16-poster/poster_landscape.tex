@@ -1,5 +1,5 @@
-\documentclass[landscape,final,paperwidth=72in,paperheight=42in,fontscale=0.285]{baposter}
-\usepackage{calc} 
+\documentclass[landscape,final,paperwidth=72in,paperheight=41.5in,fontscale=0.285]{baposter}
+%\usepackage{calc,array} 
 \usepackage{graphicx} % Required for including images
 \usepackage{amsmath}  % For typesetting math
 \usepackage{amssymb}  % Adds new symbols to be used in math mode
@@ -12,20 +12,14 @@
 
 \usepackage{float}
 \usepackage{caption} % Required for specifying captions to tables and figures
+\usepackage[export]{adjustbox}
 
-%\captionsetup[figure]{font=large,skip=0pt,labelformat=empty,justification=raggedright,singlelinecheck=false,position=above}
-\captionsetup[figure]{font=small,skip=0pt,labelformat=empty,justification=raggedright,singlelinecheck=false}
+\captionsetup[figure]{font=Large,skip=0pt,labelformat=empty,justification=raggedright,singlelinecheck=false}
 
 \usepackage{multicol} % Required for multiple columns
 
-%\usepackage{lipsum} %dummy text
-%usepackage{multicol}
-\usepackage{tcolorbox}
-
-
-%\usepackage[style=ieeetr]{bibtex} % Allows bibliography style ieee
-
-
+\usepackage[utf8]{inputenc} %Required for IEEE reference style
+\newcommand{\BIBdecl}{\setlength{\itemsep}{-0.25 em}} %Removes line space between references
 
 % Fonts
 %\usepackage{times}
@@ -36,7 +30,7 @@
 %\newcommand{\captionfont}{\footnotesize}
 
 \graphicspath{{images/}{../images/}}
-\usetikzlibrary{calc}
+%\usetikzlibrary{calc}
 
 \newcommand{\SET}[1]  {\ensuremath{\mathcal{#1}}}
 \newcommand{\MAT}[1]  {\ensuremath{\boldsymbol{#1}}}
@@ -83,7 +77,7 @@
 %\definecolor{lightblue}{cmyk}{0.83,0.24,0,0.12}
 \definecolor{lightblue}{rgb}{0.145,0.6666,1}
 
-\newtcolorbox{demobox}[1][]{colback=white,colframe=lightblue,width=0.48\linewidth,nobeforeafter,box align=top,before=\noindent,#1}
+%\newtcolorbox{demobox}[1][]{colback=white,colframe=lightblue,width=0.33\linewidth,nobeforeafter,box align=top,before=\noindent,#1}
 
 %%
 \begin{poster}%
@@ -107,8 +101,8 @@
   % Format of text header
   eyecatcher=true,
   headerborder=closed,
-  headerheight=0.1\textheight,
-%  columns=4 %default=4 for landscape posters maximum columns=6
+  headerheight=0.12\textheight,
+  columns=5, %default=4 for landscape posters maximum columns=6
 %  textfont=\sc, An example of changing the text font
   headershape=roundedright,
   headershade=shadelr,
@@ -122,12 +116,12 @@
   % University logo
   {\includegraphics[height=6em]{img/penn_state_cla_logo_new_210-89.jpg}}
   % Title
-  {\bf{The appearance and disappearance of visual forms defined by differential motion \\evokes distinctive EEG responses in school-age children}\vspace{0.2em}}
+  {\bf{The appearance and disappearance of visual forms defined by differential motion \\ evokes distinctive EEG responses in school-age children} \vspace{0.2em}}
   % Authors
   {Rick O. Gilmore \emph{(rogilmore@psu.edu)}, Daved A. Fared, Michael G. Dexheimer, \& Andrea R. Seisler\\ \vspace{0.2em}
   Neuroscience 2016 -- Poster 4367}
   % Databrary Logo
-  {\includegraphics[height=4em]{img/databrary.png}}
+ {\includegraphics[height=4em]{img/databrary.png}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Now define the boxes that make up the poster
@@ -141,15 +135,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\headerbox{Motivation}{name=abstract,column=0,row=0}
+\headerbox{Motivation}{name=abstract,column=0,span = 2,row=0}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     {
       Differential motion patterns aid in the segmentation of visual figures from the background. 
-Adults show evoked brain responses to time-varying motion-defined forms over posterior scalp regions \cite{fesi_cortical_2014},\cite{fesi_distinct_2011}; in these participants, EEG amplitudes scale with the magnitude of direction differences between the figure and background.
+      Adults show evoked brain responses to time-varying motion-defined forms over posterior scalp regions \cite{fesi_cortical_2014},\cite{fesi_distinct_2011}; in these participants, EEG amplitudes scale with the magnitude of direction differences between the figure and background.
       Little is known about the development of brain responses to motion-defined forms in childhood \cite{gilmore_childrens_2016}. In this study, we measured steady-state visual evoked potential (SSVEP) responses in school-age participants and compared the resulting patterns to previous results of adults.    
     }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\headerbox{Method}{name=method,column=0,below=abstract}
+\headerbox{Method}{name=method,column=0,span = 2,below=abstract}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     {
       School-age observers (n=37; 4.3-9.0 years, \emph{M}=6.4, 16 female) participated in this study.  
@@ -158,142 +152,104 @@ Adults show evoked brain responses to time-varying motion-defined forms over pos
       The complex domain (real and imaginary) components of each channel were analyzed using mixed-effects MANOVA, with direction difference and speed as fixed factors and participant as a random factor.  
       }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\headerbox{Displays}{name=displays,column=0, below=method}
+\headerbox{Displays}{name=displays,column=0, span=2, below=method, above=bottom}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     {
-%      \vspace{1em}
 \begin{figure}[H]
   \centering
   \caption{5 degree}\label{mofo-child-tuning-dir5.jpg}
-  \includegraphics[scale=0.3]{img/mofo-child-tuning-dir5.jpg}
-\end{figure}
-\begin{figure}[H]
-  \centering
+  \includegraphics[scale=0.51]{img/mofo-child-tuning-dir5.jpg}
+  \vspace{0.5em}
+
   \caption{45 degree}\label{mofo-child-tuning-dir45.jpg}
-  \includegraphics[scale=0.3]{img/mofo-child-tuning-dir45.jpg}
-\end{figure}
-\begin{figure}[H]
-  \centering
+  \includegraphics[scale=0.51]{img/mofo-child-tuning-dir45.jpg}
+  \vspace{0.5em}
+
   \caption{180 degree}\label{mofo-child-tuning-dir180.jpg}
-  \includegraphics[scale=0.3]{img/mofo-child-tuning-dir180.jpg}
+  \includegraphics[scale=0.51]{img/mofo-child-tuning-dir180.jpg}
 \end{figure}      
-%      \vspace{1em}
+
     }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\headerbox{Results - Direction}{name=direction,column=1,span=3,row=0}
+\headerbox{Results - 1F1}{name=1F1,column=2,span=3,row=0}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    {
 %      We chose p<.0005 as our alpha level to reduce the likelihood of reporting false positives. 
 %Statistically significant effects for direction were found at 1F1, 2F1, and 3F1, and these showed a broad distribution across the scalp. 
 %No channels met criterion for the effect of speed at any harmonic. 
 %Many, but not all channels showed the scaling of amplitude by figure/background direction difference found in adults, an effect particularly pronounced at 3F1. 
 %Complex domain plots of the most reponsive channels at 2F1 and 3F1 showed consistent phase and amplitude profiles. 
-\begin{demobox}[title=Direction-Speed Interaction]
-%\lipsum[1]
+{
 
-\begin{figure}[H]
-  \centering
-  \caption{1F1}\label{1F1-analyze-and-plot-main-effects-1.png}
-  \includegraphics[scale=0.3]{../../figs/1F1-analyze-and-plot-main-effects-1.png}
-\end{figure}
+\begin{center}
 
-\begin{figure}[H]
-  \centering
-  \caption{2F1}\label{2F1-analyze-and-plot-main-effects-1.png}
-  \includegraphics[scale=0.3]{../../figs/2F1-analyze-and-plot-main-effects-1.png}
-\end{figure}
+  \includegraphics[scale=0.25,valign=t]{img/1F1-analyze-and-plot-main-effects-1.png}
+  \hfill
+  \includegraphics[scale=0.18,valign=t]{img/1F1-plot-channel-effects-1.png}
+  \hfill
+  \includegraphics[scale=0.18,valign=t]{img/1F1-plot-vector-avg-1.png}
+  
+\end{center}
 
-\begin{figure}[H]
-  \centering
-    \caption{3F1}\label{3F1-analyze-and-plot-main-effects-1.png}
-    \includegraphics[scale=0.3]{../../figs/3F1-analyze-and-plot-main-effects-1.png}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[scale=0.3]{../../figs/legend-analyze-and-plot-main-effects-1.png}
-\end{figure}
-
-\end{demobox}
-%\hfill
-\hspace{0.5em}
-\begin{demobox}[title=Channel Effects]
-%\begin{figure}[H]
-
-\begin{figure}[H]
-  \centering
-    \caption{2F1}\label{plot-vector-avg-1.png}
-    \includegraphics[scale=0.25]{../../figs/2F1/plot-vector-avg-1.png}
-  \centering
-    \caption{3F1}\label{3F1-analyze-and-plot-main-effects-1.png}
-    \includegraphics[scale=0.25]{../../figs/3F1/plot-channel-effects-1.png}
-\end{figure}
-
-%\end{figure}
-\end{demobox}
 }
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%    \headerbox{Results - Speed}{name=speed,column=4,span=2,row=0, bottomaligned=references}
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        {
-%         No channels met criterion for the effect of speed at any harmonic. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\headerbox{Results - 2F1}{name=2F1,column=2,span=3,below=1F1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{
 
+\begin{center}
 
- %         \begin{center}
-%            \includegraphics[scale=0.12]{img/pcorr.png}
+  \includegraphics[scale=0.25,valign=t]{img/2F1-analyze-and-plot-main-effects-1.png}
+  \hfill
+  \includegraphics[scale=0.18,valign=t]{img/2F1-plot-channel-effects-1.png}
+  \hfill
+  \includegraphics[scale=0.18,valign=t]{img/2F1-plot-vector-avg-1.png}
+  
+\end{center}
 
-%            \includegraphics[scale=0.12]{img/rt.png}
-%          \end{center}
-        }
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\headerbox{Results - 3F1}{name=3F1,column=2,span=3,below=2F1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{
 
+\begin{center}
+  \includegraphics[scale=0.25,valign=t]{img/3F1-analyze-and-plot-main-effects-1.png}
+  \hfill
+  \includegraphics[scale=0.18,valign=t]{img/3F1-plot-channel-effects-1.png}
+  \hfill
+  \includegraphics[scale=0.18,valign=t]{img/3F1-plot-vector-avg-1.png}
+\end{center}
+
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-   \headerbox{Data Sharing}{name=sharing,column=0, below=displays, above=bottom}
+   \headerbox{Data Sharing}{name=sharing,column=2, below=3F1, above=bottom}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     {
        Movies of the displays, metadata about the participants, and raw data files are available at: \url{http://databrary.org/volume/144}.
      }  
-     
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Acknowledgements}{name=thanks,column=1,below=direction, above=bottom}
+  \headerbox{Acknowledgements}{name=thanks,column=3,below=3F1, above=bottom}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     {
+    \smaller
       This material is based upon work supported by the National Science Foundation under Grant Number BCS-1147440. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.  
     }    
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- \headerbox{References}{name=references,column=2, span=2, below=direction, above=bottom}
+ \headerbox{References}{name=references,column=4, below=3F1, above=bottom}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   {
-          \smaller
+          \tiny
   %For use with external .bib file
-%          \renewcommand{\refname}{\vspace{-0.8em}} % removes "References" canned text.
+          \renewcommand{\refname}{\vspace{-0.5em}} % removes "References" canned text.
+%          \renewcommand{\section}[2]{\vskip 0.05em}
+%          \bibliographystyle{plain}
+%          \bibliography{poster_landscape}
           
-          \renewcommand{\section}[2]{\vskip 0.05em}
-        
-          \bibliographystyle{plain}
-          \bibliography{poster_landscape}
-%      \bibliographystyle{plain}
-%      \bibliography{sfn2016bibliography}
+          \bibliographystyle{IEEEtran}
+          \bibliography{IEEEabrv,poster_landscape}
+
+}
+
+\end{poster}%
 %
-%     \renewcommand{\section}[2]{\vskip 0.05em}
-%        \begin{thebibliography}{1}\itemsep=-0.01em
-%        \setlength{\baselineskip}{0.4em}
-%        \bibitem{fesi14:mofo-moco}
-%          J.F.~Fesi, A.L.~Thomas, \& R.O.~Gilmore. (2014).
-%          \newblock {Cortical responses to optic flow and motion contrast across patterns and speeds.}
-%          \newblock {\em Vision Research, 100}
-%          \newblock {, 56-71.}
-%        \bibitem{awf:tracking}
-%          M.R.~Joshi \& H.K.~Falkenberg. (2015).
-%    \newblock {Development of radial optic flow pattern sensitivity at different speeds.}
-%          \newblock {\em Vision Research, 110}
-%          \newblock {, 68-75.}
-%        \end{thebibliography}
-%     \vspace{0.3em}
-    }
-
-
-\end{poster}
-
 \end{document}
