@@ -12,7 +12,6 @@
 
 \usepackage{float}
 \usepackage{caption} % Required for specifying captions to tables and figures
-\usepackage{wrapfig} % Wrap text around figure
 \usepackage[export]{adjustbox}
 
 \captionsetup[figure]{font=Large,skip=0pt,labelformat=empty,justification=raggedright,singlelinecheck=false}
@@ -147,33 +146,29 @@
 \headerbox{Method}{name=method,column=0,span = 2,below=abstract}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     {
-\begin{wrapfigure}{R}{5cm}
-\centering
-\includegraphics[scale=0.18]{../../figs/figure-egi-channel-locations-1.png}
-\par
-128 Channel Layout
-\end{wrapfigure}
-School-age observers (n=37; 4.3-9.0 years, \emph{M}=6.4, 16 female) participated in this study.  Participants passively viewed random dot kinematogram displays that depicted visual forms which differed in direction from uniform background motion by 5\degree, 45\degree, or 180\degree. Four 9x9 deg square-shaped figure regions emerged from and disappeared into the background at a rate of 1.2 Hz (F1). Figure and background regions were populated with white (39 cd/m\textsuperscript{2}) dots on a black (.065 cd/m\textsuperscript{2}) background at a density of 10\%; dot positions were updated at 36 Hz (F2). Each condition was presented at two speeds (1.2 and 6.0 deg/s). All patterns were displayed in an annular region 24\degree in outer and 4.8\degree inner diameter at the 60 cm viewing distance. 
-\par    
-EEG was collected at 432.43 Hz using a 128 channel EGI system and PowerDiva Video 3.4 software and submitted to a discrete Fourier transform. 
-\par
-The complex domain (real and imaginary) components of each channel were analyzed using mixed-effects MANOVA, with direction difference and speed as fixed factors and participant as a random factor.  
-\par  
+      School-age observers (n=37; 4.3-9.0 years, \emph{M}=6.4, 16 female) participated in this study.  
+      Participants passively viewed random dot kinematogram displays that depicted visual forms which differed in direction from uniform background motion by 5\degree, 45\degree, or 180\degree. Four 9x9 deg square-shaped figure regions emerged from and disappeared into the background at a rate of 1.2 Hz (F1). Figure and background regions were populated with white (39 cd/m\textsuperscript{2}) dots on a black (.065 cd/m\textsuperscript{2}) background at a density of 10\%; dot positions were updated at 36 Hz (F2). Each condition was presented at two speeds (1.2 and 6.0 deg/s). All patterns were displayed in an annular region 24\degree in outer and 4.8\degree inner diameter at the 60 cm viewing distance.  
+      EEG was collected at 432.43 Hz using a 128 channel EGI system and PowerDiva Video 3.4 software and submitted to a discrete Fourier transform. 
+      The complex domain (real and imaginary) components of each channel were analyzed using mixed-effects MANOVA, with direction difference and speed as fixed factors and participant as a random factor.  
       }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \headerbox{Displays}{name=displays,column=0, span=2, below=method, above=bottom}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     {
-\vspace{-1.3em}    %remove extra space at top of box
 \begin{figure}[H]
   \centering
   \caption{5 degree}\label{mofo-child-tuning-dir5.jpg}
-  \includegraphics[scale=0.49]{img/mofo-child-tuning-dir5.jpg}
+  \includegraphics[scale=0.51]{img/mofo-child-tuning-dir5.jpg}
+  \vspace{0.5em}
+
   \caption{45 degree}\label{mofo-child-tuning-dir45.jpg}
-  \includegraphics[scale=0.49]{img/mofo-child-tuning-dir45.jpg}
+  \includegraphics[scale=0.51]{img/mofo-child-tuning-dir45.jpg}
+  \vspace{0.5em}
+
   \caption{180 degree}\label{mofo-child-tuning-dir180.jpg}
-  \includegraphics[scale=0.49]{img/mofo-child-tuning-dir180.jpg}
+  \includegraphics[scale=0.51]{img/mofo-child-tuning-dir180.jpg}
 \end{figure}      
+
     }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \headerbox{Results - 1F1}{name=1F1,column=2,span=3,row=0}
@@ -184,30 +179,39 @@ The complex domain (real and imaginary) components of each channel were analyzed
 %Many, but not all channels showed the scaling of amplitude by figure/background direction difference found in adults, an effect particularly pronounced at 3F1. 
 %Complex domain plots of the most reponsive channels at 2F1 and 3F1 showed consistent phase and amplitude profiles. 
 {
+
 \begin{center}
+
   \includegraphics[scale=0.25,valign=t]{img/1F1-analyze-and-plot-main-effects-1.png}
   \hfill
   \includegraphics[scale=0.18,valign=t]{img/1F1-plot-channel-effects-1.png}
   \hfill
   \includegraphics[scale=0.18,valign=t]{img/1F1-plot-vector-avg-1.png}
+  
 \end{center}
+
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \headerbox{Results - 2F1}{name=2F1,column=2,span=3,below=1F1}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {
+
 \begin{center}
+
   \includegraphics[scale=0.25,valign=t]{img/2F1-analyze-and-plot-main-effects-1.png}
   \hfill
   \includegraphics[scale=0.18,valign=t]{img/2F1-plot-channel-effects-1.png}
   \hfill
   \includegraphics[scale=0.18,valign=t]{img/2F1-plot-vector-avg-1.png}
+  
 \end{center}
+
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \headerbox{Results - 3F1}{name=3F1,column=2,span=3,below=2F1}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {
+
 \begin{center}
   \includegraphics[scale=0.25,valign=t]{img/3F1-analyze-and-plot-main-effects-1.png}
   \hfill
@@ -215,6 +219,7 @@ The complex domain (real and imaginary) components of each channel were analyzed
   \hfill
   \includegraphics[scale=0.18,valign=t]{img/3F1-plot-vector-avg-1.png}
 \end{center}
+
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
    \headerbox{Data Sharing}{name=sharing,column=2, below=3F1, above=bottom}
@@ -236,10 +241,15 @@ The complex domain (real and imaginary) components of each channel were analyzed
           \tiny
   %For use with external .bib file
           \renewcommand{\refname}{\vspace{-0.5em}} % removes "References" canned text.
+%          \renewcommand{\section}[2]{\vskip 0.05em}
+%          \bibliographystyle{plain}
+%          \bibliography{poster_landscape}
+          
           \bibliographystyle{IEEEtran}
           \bibliography{IEEEabrv,poster_landscape}
 
 }
+
 \end{poster}%
 %
 \end{document}
