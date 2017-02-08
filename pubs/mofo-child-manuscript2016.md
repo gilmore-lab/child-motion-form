@@ -2,14 +2,16 @@
 - Items in bold need to be checked for accuracy.
 
 ## Methods
-Participants
+
+### Participants
+
 Fifty two children participated in this study and this sample consisted of children drawn from a database of families in Centre County, Pennsylvania. Thirty-seven children, (16 female; mean age: 6.4 years) between four and nine years of age resulted in data comprising the final data set. Fifteen children were tested but excluded because of equipment failure (5), experimenter error (1), poor participant vision -strabismus (1), refusal to wear net (3), too many channels above threshold (3) and too few blocks collected (2). Children were excluded if they were born prematurely, had a history of serious visual or medical problems, epilepsy, or seizures. All children tested had normal pattern vision as evaluated with HOTV optotype acuity, a measure of visual function designed for very young participants, at a distance of 10 feet. We obtained written consent to participate from parents or guardians on behalf of the children and written assent from the children themselves under procedures approved by the Institutional Review Board of The Pennsylvania State University (#37946). The research was conducted according to the principles expressed in the Declaration of Helsinki.
 
 
-Display
-All participants viewed random dot kinematogram displays on a mono- chrome monitor with an 800 x 600 pixel resolution and a screen refresh rate of 72 Hz. The displays were generated on a Macintosh G4 computer using Power Diva software (version 3.4, Smith- Kettlewell Eye Research Institute).
+### Display
+All participants viewed random dot kinematogram displays on a monochrome monitor with an 800 x 600 pixel resolution and a screen refresh rate of 72 Hz. The displays were generated on a Macintosh G4 computer using Power Diva software (version 3.4, Smith- Kettlewell Eye Research Institute).
 
-Stimuli
+### Stimuli
 Participants passively viewed random dot kinematogram displays that depicted visual forms which differed in direction from uniform background motion by 5, 45, or 180 deg, differed in coherence (0,100%) and differed in motion direction on a black background from 0 to 180 deg. All patterns were displayed in an annular region 24° in outer and 4.8° inner diameter at the 60 cm viewing distance. Four 9x9 deg square-shaped figure regions emerged from and disappeared into the background at a rate of 1.2 Hz (F1). Figure and background regions were populated with white (39 cd/m^2) dots on a black (.065 cd/m^2) background at a density of 10%; dot positions were updated at 36 Hz (F2). Each condition was presented at two speeds (1.2 and 6.0 deg/s). In order to reduce response adaptation, the direction of motion reversed **every other cycle (at 0.6 Hz)**.
 
 
