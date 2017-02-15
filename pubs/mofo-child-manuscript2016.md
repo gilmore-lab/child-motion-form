@@ -1,4 +1,6 @@
+
 # Mofo child manuscript  
+
 - Items in bold need to be checked for accuracy.
 
 ## Methods
@@ -9,11 +11,12 @@ Fifty two children participated in this study and this sample consisted of child
 
 
 ### Display
+
 All participants viewed random dot kinematogram displays on a monochrome monitor with an 800 x 600 pixel resolution and a screen refresh rate of 72 Hz. The displays were generated on a Macintosh G4 computer using Power Diva software (version 3.4, Smith- Kettlewell Eye Research Institute).
 
 ### Stimuli
-Participants passively viewed random dot kinematogram displays that depicted visual forms which differed in direction from uniform background motion by 5, 45, or 180 deg, differed in coherence (0,100%) and differed in motion direction on a black background from 0 to 180 deg. All patterns were displayed in an annular region 24° in outer and 4.8° inner diameter at the 60 cm viewing distance. Four 9x9 deg square-shaped figure regions emerged from and disappeared into the background at a rate of 1.2 Hz (F1). Figure and background regions were populated with white (39 cd/m^2) dots on a black (.065 cd/m^2) background at a density of 10%; dot positions were updated at 36 Hz (F2). Each condition was presented at two speeds (1.2 and 6.0 deg/s). In order to reduce response adaptation, the direction of motion reversed **every other cycle (at 0.6 Hz)**.
 
+Participants passively viewed random dot kinematogram displays that depicted visual forms which differed in direction from uniform background motion by 5, 45, or 180 deg, differed in coherence (0,100%) and differed in motion direction on a black background from 0 to 180 deg. All patterns were displayed in an annular region 24° in outer and 4.8° inner diameter at the 60 cm viewing distance. Four 9x9 deg square-shaped figure regions emerged from and disappeared into the background at a rate of 1.2 Hz (F1). Figure and background regions were populated with white (39 cd/m^2) dots on a black (.065 cd/m^2) background at a density of 10%; dot positions were updated at 36 Hz (F2). Each condition was presented at two speeds (1.2 and 6.0 deg/s). In order to reduce response adaptation, the direction of motion reversed **every other cycle (at 0.6 Hz)**.
 
 Procedures
 Upon arrival at the laboratory, study and visit procedures were described and informed consent/assent was obtained. After net fitting and placement, participants were escorted to the testing room and seated on an adjustable chair in front of the computer monitor. Electrode impedances were checked, and once impedances met testing criteria (at 50kΩ or below), lights were dimmed and the session began. A research assistant remained in the testing room to monitor participants' fixation and to call for breaks, as needed. Between 3 and 10 blocks were collected for each set of 10 conditions depending on the attention span of the child. Each of the 10 conditions were presented in random order. Participants were encouraged to talk or wiggle in between blocks to help the child remain still during data collection. The entire testing session took about 45 min.
