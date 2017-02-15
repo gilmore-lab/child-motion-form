@@ -1,0 +1,65 @@
+---
+title: "Change GitHub filenames to Databrary format"
+author: "Rick O. Gilmore"
+date: "February 15, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Planning our work
+
+- Download spreadsheet with all names. `databraryandbox-Gilmore-child-motion-form.xls` from Google Drive.
+- Change all files in `analysis/data/csv-bysession` from `YYYYMMDD_HHMMSS.csv` to the following format: `<databrary-session-id>-<databrary-participant-id>.csv`
+    - Load spreadsheet
+    - For each row, find the value in column `Github`, create a filename from that value by adding `.csv`
+    - Find this filename in `analysis/data/csv-bysession`
+    - If we find it, change it to `<session-id>-<participant-ID>.csv`
+    
+## Open spreadsheet
+
+```{r open-ss}
+db.ss <- read.csv(file = "analysis/data/databraryandbox-Gilmore-child-motion-form .xls - databrary144-Gilmore-child-moti.csv", header = TRUE)
+```
+
+Let's try opening one line as an experiment.
+
+```{r open-1-line}
+fn <- paste(db.ss[1,'Github'], ".csv", sep="")
+new.fn <- paste(db.ss[1, 'session.id'], "-", db.ss[1,'participant.ID'], ".csv", sep="")
+fn <- paste("analysis/data/csv-bysession/", fn, sep="")
+new.fn <- paste("analysis/data/csv-bysession/", new.fn, sep="")
+if (file.exists(fn)) {
+  file.rename(from = fn, to=new.fn)
+}
+```
+A smarter way to do this would be to write a function and apply it across all of the files.
+
+```{r change-name-function}
+Rename.mofo.files <- function(row, db, data.dir="analysis/data/csv-bysession/") {
+  # Take rows of db file and rename
+  # Parameters
+  #   row: row number in the db spreadsheet
+  #   db: dataframe imported from csv file
+  #   data.dir: director for session data files
+  
+  fn <- paste(data.dir, db[row,'Github'], ".csv", sep="")
+  new.fn <- paste(data.dir, db[row, 'session.id'], "-", db[row,'participant.ID'], ".csv", sep="")
+  if (file.exists(fn)) {
+    file.rename(from = fn, to = new.fn)
+    message(sprintf("Renamed %s to %s.", fn, new.fn))
+  } else {
+    warning(sprintf("%s does not exist.", fn))
+  }
+}
+```
+
+This function seems to work. Hooray!
+
+Now, let's list-ify it.
+
+```{r run-function-over-list}
+lapply(1:length(list.files("analysis/data/csv-bysession/")), Rename.mofo.files, db=db.ss)
+```
