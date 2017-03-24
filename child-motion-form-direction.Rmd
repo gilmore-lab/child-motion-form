@@ -2,7 +2,7 @@
 title: "child-motion-form-direction"
 author: "Rick Gilmore"
 date: "`r Sys.time()`"
-output: 
+output:
   html_document:
     fig_width: 8.5
 params:

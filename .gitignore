@@ -3,3 +3,5 @@
 .Rproj
 analysis/data/csv-aggregate
 .Rproj.user
+child-motion-form.Rproj
+*.Rproj
