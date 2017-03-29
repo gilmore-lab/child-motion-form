@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Planning our work
 
-- Download spreadsheet with all names. `databraryandbox-Gilmore-child-motion-form.xls` from Google Drive.
+- Download spreadsheet with all names. `databraryandbox-Gilmore-child-motion-form.xls` from Google Drive. Downloaded spreadsheet from [Databrary Volume 144](https://nyu.databrary.org/volume/144).
 - Change all files in `analysis/data/csv-bysession` from `YYYYMMDD_HHMMSS.csv` to the following format: `<databrary-session-id>-<databrary-participant-id>.csv`
     - Load spreadsheet
     - For each row, find the value in column `Github`, create a filename from that value by adding `.csv`

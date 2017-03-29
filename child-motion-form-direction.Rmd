@@ -5,6 +5,10 @@ date: "`r Sys.time()`"
 output:
   html_document:
     fig_width: 8.5
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    code_folding: hide
 params:
   group: child
   p_thresh: .0005
@@ -104,11 +108,23 @@ if (identical(list.files(data_agg_path), data_fn)){
 df_egi <- read.csv(egi_path)
 ```
 
+# Participant characteristics
+
+## Add code to summarize participant characteristics
+
+<!-- Look up functions to create a tabular summary in R -->
+
+```{r summarize-participant-demographics, eval=FALSE}
+# p <- read.csv("analysis/data/participant-metadata.csv")
+# str(p)
+# Hint: Look at xtabs()
+```
+
 # Data plots for `r params$condition` at `r params$harmonic`
 
 ## Channel-level effects for `r params$harmonic`
 
-```{r analyze-and-plot-main-effects, echo=FALSE}
+```{r analyze-and-plot-main-effects}
 df_all <- df_all %>% filter(Harm == params$harmonic, iCond %in% condition.indices)
 form <- cbind(Sr, Si) ~ Direction + Speed + Direction*Speed + Error(iSess)
 chan_eff <- compute_chan_effects(df_all, params$harmonic, form)
@@ -122,14 +138,14 @@ plot_channel_effects(df_chan_stats, params$harmonic, params$group, topo_path, pa
 
 ## Amplitudes for all channels p < `r sprintf("%.4f", as.numeric(params$p_thresh))`
 
-```{r plot-channel-effects, echo=FALSE}
+```{r plot-channel-effects, eval=FALSE}
 plot_channel_magnitudes(df_chan_stats, df_all, params$group, params$harmonic, "Direction", as.numeric(params$p_thresh), params$plot_titles)
 plot_channel_magnitudes(df_chan_stats, df_all, params$group, params$harmonic, "Speed", as.numeric(params$p_thresh), params$plot_titles)
 ```
 
 ## Vector average plots for n=`r params$n_top` high amplitude channels
 
-```{r plot-vector-avg, echo=FALSE}
+```{r plot-vector-avg, eval=FALSE}
 plot_complex_domain_results(df_chan_stats, df_all, "Direction", params$group, params$harmonic, as.numeric(params$n_top), as.numeric(params$p_thresh), params$plot_titles)
 plot_complex_domain_results(df_chan_stats, df_all, "Speed", params$group, params$harmonic, as.numeric(params$n_top), as.numeric(params$p_thresh), params$plot_titles)
 ```

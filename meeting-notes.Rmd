@@ -1,0 +1,19 @@
+---
+title: "mtg-notes"
+author: "Rick Gilmore"
+date: "March 29, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 2017-03-29-15:04
+
+- Google drive draft <https://docs.google.com/document/d/1bjEO3Fulf3sSTiaG9QLYsAOBpTnoT-jTOx-iMRXCH78/edit>
+- Research whether PSU Libraries will help with costs of open journal submission/publication fees.
+- By 4/12 review outline of paper in eNeuro format with as much of methods and references as we can muster.
+- Data analysis plan:
+- Ran `child-motion-form.Rmd` to make sure code is still intact.
+- Write pseudocode to generate descriptive statistics about participants. e.g., We tested n= (n female; age min-max, mean).
