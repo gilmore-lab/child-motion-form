@@ -15,6 +15,7 @@ Last updated 2016-09-21 12:04:19.
     - [Project notes](notes/project-notes-mofo-child-tuning.md)
     - [Stimulus parameters](notes/mofo-child-tuning-parameters.md)
     - [How to transfer files from PowerBook to iMac](connect_PowerBook2iMac.md)
+    - [Participant ID mapping](https://psu.app.box.com/file/63142232302) - Login Required
 - [analysis/](analysis/)
     - [mofo-RLS-file-convert.R](analysis/mofo-RLS-file-convert.R), function to import, merge, and convert PowerDiva RLS, Session, and related files into CSVs.
     - [data/](analysis/data/)
