@@ -1,3 +1,17 @@
+---
+title: "mofo-child-manuscript"
+author: "Rick Gilmore"
+date: "`r Sys.time()`"
+output: github_document
+params:
+  data_dir: ../analysis/data/csv-bysession-anon
+  this_dir: pubs/
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
 
 # Mofo child manuscript  
 
@@ -5,10 +19,63 @@
 
 ## Methods
 
+```{r change-iSess}
+# for every file in csv-bysession, we need to change the iSess variable to the
+# participant ID, which is the 3 or 4 digit number between the '-' and the '.csv'
+# The following code was run once
+
+# Change_iSess <- function(fn) {
+#   new_iSess <- str_extract_all(fn, pattern = '[0-9]+')[[1]][2]
+#   df <- read_csv(fn)
+#   df$iSess <- as.numeric(new_iSess)
+#   write.csv(df, file = paste0("analysis/data/csv-bysession-anon/", new_iSess, ".csv"), row.names = FALSE)
+# }
+# 
+# fl <- list.files("analysis/data/csv-bysession", full.names = TRUE)
+# # Change_iSess(fl[1])
+# 
+# sapply(fl, Change_iSess)
+#
+# s993 <- read_csv("analysis/data/csv-bysession-anon/993.csv")
+# s993$AgeDays <- 2226
+# write_csv(s993, "analysis/data/csv-bysession-anon/993.csv")
+```
+
+
+```{r load-data}
+# to run from project root temporarily
+# params$data_dir <- "analysis/data/csv-bysession-anon"
+file_list <- list.files(params$data_dir, pattern = "\\.csv$", full.names = TRUE)
+
+mofo_merged_list <- lapply(file_list, read_csv)
+mofo_merged <- Reduce(function(x,y) full_join(x,y, all=TRUE), mofo_merged_list)
+```
+
+```{r calculate-demographics}
+mofo_merged %>%
+  select(iSess, AgeDays, Sex) %>%
+  mutate(MinDays = min(AgeDays), MaxDays=max(AgeDays), MeanDays=mean(AgeDays)) ->
+  age_dist
+
+# hist(unique(age_dist$AgeDays))
+# # Looks like there is an outlier with AgeDays == 22424
+# unique(age_dist$iSess[age_dist$AgeDays > 5000])
+# # So, we need the actual age in days for 993, from Databrary, should be 2226
+# 
+
+age_dist %>%
+  group_by(Sex, iSess) %>%
+  summarize(nF = n())
+```
+
+
 ### Participants
 
-Fifty two children participated in this study and this sample consisted of children drawn from a database of families in Centre County, Pennsylvania. Thirty-seven children, (16 female; mean age: 6.4 years) between four and nine years of age resulted in data comprising the final data set. Fifteen children were tested but excluded because of equipment failure (5), experimenter error (1), poor participant vision -strabismus (1), refusal to wear net (3), too many channels above threshold (3) and too few blocks collected (2). Children were excluded if they were born prematurely, had a history of serious visual or medical problems, epilepsy, or seizures. All children tested had normal pattern vision as evaluated with HOTV optotype acuity, a measure of visual function designed for very young participants, at a distance of 10 feet. We obtained written consent to participate from parents or guardians on behalf of the children and written assent from the children themselves under procedures approved by the Institutional Review Board of The Pennsylvania State University (#37946). The research was conducted according to the principles expressed in the Declaration of Helsinki.
+Fifty two children participated in this study and this sample consisted of children drawn from a database of families in Centre County, Pennsylvania. Thirty-seven children, 
 
+<!-- (`r nFemale` female; mean age: `r MeanDays/365.25` years; range `r MinDays/365.25`-`r MaxDays/365.25`)(16 female; mean age: 6.4 years)  -->
+
+between four and nine years of age resulted in data comprising the final data set. Fifteen children were tested but excluded because of equipment failure (5), experimenter error (1), poor participant vision -strabismus (1), refusal to wear net (3), too many channels above threshold (3) and too few blocks collected (2). Children were excluded if they were born prematurely, had a history of serious visual or medical problems, epilepsy, or seizures. All children tested had normal pattern vision as evaluated with HOTV optotype acuity, a measure of visual function designed for very young participants, at a distance of 10 feet. We obtained written consent to participate from parents or guardians on behalf of the children and written assent from the children themselves under procedures approved by the Institutional Review Board of The Pennsylvania State University (#37946). The research was conducted according to the principles expressed in the Declaration of Helsinki.
 
 ### Display
 
@@ -19,12 +86,15 @@ All participants viewed random dot kinematogram displays on a monochrome monitor
 Participants passively viewed random dot kinematogram displays that depicted visual forms which differed in direction from uniform background motion by 5, 45, or 180 deg, differed in coherence (0,100%) and differed in motion direction on a black background from 0 to 180 deg. All patterns were displayed in an annular region 24° in outer and 4.8° inner diameter at the 60 cm viewing distance. Four 9x9 deg square-shaped figure regions emerged from and disappeared into the background at a rate of 1.2 Hz (F1). Figure and background regions were populated with white (39 cd/m^2) dots on a black (.065 cd/m^2) background at a density of 10%; dot positions were updated at 36 Hz (F2). Each condition was presented at two speeds (1.2 and 6.0 deg/s). In order to reduce response adaptation, the direction of motion reversed **every other cycle (at 0.6 Hz)**.
 
 ### Procedures
+
 Upon arrival at the laboratory, study and visit procedures were described and informed consent/assent was obtained. After net fitting and placement, participants were escorted to the testing room and seated on an adjustable chair in front of the computer monitor. Electrode impedances were checked, and once impedances met testing criteria (at 50kΩ or below), lights were dimmed and the session began. A research assistant remained in the testing room to monitor participants' fixation and to call for breaks, as needed. Between 3 and 10 blocks were collected for each set of 10 conditions depending on the attention span of the child. Each of the 10 conditions were presented in random order. Participants were encouraged to talk or wiggle in between blocks to help the child remain still during data collection. The entire testing session took about 45 min.
 
 ### EEG Collection
+
 Steady-state evoked potential (SSVEP) responses were recorded using a 128-channel HydroCel Geodesic Sensor Net (Electrical Geodesics, Inc.) in conjunction with NetStation 4.1 software. Electrode impedance for each session was at or below 50 kOhms for all electrodes. EEG was **filtered at XXX**, sampled rate of 432.43 Hz, referenced to the vertex (Cz). 
 
 ### EEG analysis
+
 PowerDiva Host 3.4 software was used offline to analyze the cortical activity related to the display of the stimuli. Artifact rejection was completed according to a sample by sample procedure where the rejected individual electrodes were eplaced with the average of the six neighboring electordes. The EEG data were then re-referenced to the net average. Amplitude modulations that exceeded 100 µV were rejected as artifact as well as entire trials that had greater than 15% of rejected cycles. The EEG patterns were analyzed using a version of the discrete Fourier transform. The frequency domain components were extracted at low order integer harmonics of the fundamental frequency (1F1=1.2 Hz) of the motion coherence modulation and the dot update rate (1F2=36 Hz) using a discrete Fourier transform algorithm. 
 
 Phase-locked coherent averages of response amplitudes were analyzed and visualized using R 3.2.1 [71], RStudio 0.99.489 (http://www.rstudio.com), and the packages ggplot2 [72] and dplyr [73]. The complex domain (real and imaginary) components of each channel were analyzed using mixed-effects MANOVA, with direction difference and speed as fixed factors and participant as a random factor. We analyzed speed and pattern effects separately for each individual channel while choosing a conservative criterion (p<.0005) as our alpha level to reduce the likelihood of reporting false positives. Topographic visualizations of the data were created with the effects of Pattern and Speed on the VEP signal.
